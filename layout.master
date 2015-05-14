@@ -11,7 +11,7 @@
     <title></title>
      <!-- Bootstrap -->
     <link href="boot/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <!-- Include roboto.css to use the Roboto web font, material.css to includ the theme and ripples.css to style the ripple effect -->
         <link href="boot/css/roboto.min.css" rel="stylesheet">
         <link href="boot/css/material.min.css" rel="stylesheet">
         <link href="boot/css/ripples.min.css" rel="stylesheet">
