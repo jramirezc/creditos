@@ -102,10 +102,14 @@
         <br />
         <br />
         <br />
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-  
+         <asp:ContentPlaceHolder id="usuario" runat="server"></asp:ContentPlaceHolder>
+
+   <div class="row">
+       <div class="col-sm-10 col-sm-offset-1 well">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+          
+       </div>
+  </div>
            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="\boot/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
