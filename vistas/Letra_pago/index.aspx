@@ -7,7 +7,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="parametrizacion" Runat="Server">
 </asp:Content>
 
-<asp:Content ID="Content4" ContentPlaceHolderID="credito" Runat="Server">
+<asp:Content ID="Content4" ContentPlaceHolderID="letras" Runat="Server">
     <%
         Response.Write(Page.RouteData.Values("id").ToString())
         %>

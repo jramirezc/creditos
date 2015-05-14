@@ -15,7 +15,10 @@
         routes.MapPageRoute("", _
     "login", _
     "~/vistas/user/login.aspx")
-        
+        ' letras de pago rutas
+        routes.MapPageRoute("", _
+    "letras/{id}", _
+    "~/vistas/Letra_pago/index.aspx")
         
     End Sub
     Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)
