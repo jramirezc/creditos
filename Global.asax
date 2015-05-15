@@ -19,6 +19,13 @@
         routes.MapPageRoute("", _
     "letras/{id}", _
     "~/vistas/Letra_pago/index.aspx")
+                'Rutas de  Tabla tipo documento     
+        routes.MapPageRoute("", _
+     "tipoDocumento", _
+     "~/vistas/tipoDocumento/Index.aspx")
+        routes.MapPageRoute("", _
+    "tipoDocumento/crear", _
+    "~/vistas/tipoDocumento/Crear.aspx")
         
     End Sub
     Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)
