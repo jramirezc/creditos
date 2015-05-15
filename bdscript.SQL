@@ -1,31 +1,30 @@
 CREATE TABLE Tbl_Credito ( 
 	idCredito int identity(1,1)  NOT NULL,
-	nomCredito varchar(50) NOT NULL,
-	monto decimal(10,2) NOT NULL,
-	idusuarioCliente int NOT NULL,
 	idTipCredito int,
-	interes decimal(10,2),
+	monto decimal(10,2) NOT NULL,
+	tasInteres decimal(10,2),
+	idusuarioAgente int NOT NULL,
 	idEstado int NOT NULL,
-	creado datetime DEFAULT getdate(),
-	modificado datetime DEFAULT getdate()
+	letras int,
+	creado datetime DEFAULT getdate()
 )
 ;
 
 CREATE TABLE Tbl_Credito_Bitacora ( 
 	idCredito int NOT NULL,
-	nomCredito varchar(50) NOT NULL,
-	monto decimal(10,2) NOT NULL,
-	idusuarioCliente int NOT NULL,
-	idusuarioAgente int NOT NULL,
 	idTipCredito int NOT NULL,
-	interes decimal(10,2) NOT NULL,
+	monto decimal(10,2) NOT NULL,
+	tasInteres decimal(10,2) NOT NULL,
+	idusuarioAgente int NOT NULL,
 	idEstado int NOT NULL,
-	Letras int
+	Letras int,
+	creado datetime,
+	modificado datetime DEFAULT getdate()
 )
 ;
 
 CREATE TABLE Tbl_Detalle_Credito ( 
-	idDetCredito int identity(1,1)  NOT NULL,
+	idDetCredito int NOT NULL,
 	idCredito int NOT NULL,
 	totalLetras int NOT NULL,
 	noCuenta int NOT NULL,
@@ -36,7 +35,7 @@ CREATE TABLE Tbl_Detalle_Credito (
 ;
 
 CREATE TABLE Tbl_DocxCredito ( 
-	idDocumento int identity(1,1)  NOT NULL,
+	idDocumento int NOT NULL,
 	idPersona int NOT NULL,
 	idTipoDocumento int,
 	fecha datetime,
@@ -46,7 +45,7 @@ CREATE TABLE Tbl_DocxCredito (
 ;
 
 CREATE TABLE Tbl_Estado ( 
-	idEstado int identity(1,1)  NOT NULL,
+	idEstado int NOT NULL,
 	nomEstado varchar(50) NOT NULL,
 	estado bit NOT NULL
 )
@@ -60,13 +59,13 @@ CREATE TABLE Tbl_Estado_Civil (
 ;
 
 CREATE TABLE Tbl_Fiador ( 
-	cuiPersona int,
+	idPersona int,
 	idCredito int
 )
 ;
 
 CREATE TABLE Tbl_Letras_De_Pago ( 
-	idletPago int identity(1,1)  NOT NULL,
+	idletPago int NOT NULL,
 	idCredito int NOT NULL,
 	letraPago decimal(9,2) NOT NULL,
 	Saldo decimal(9,2) NOT NULL,
@@ -76,7 +75,7 @@ CREATE TABLE Tbl_Letras_De_Pago (
 ;
 
 CREATE TABLE Tbl_PermisoxRol ( 
-	idRolxPermiso int identity(1,1)  NOT NULL,
+	idRolxPermiso int NOT NULL,
 	idPermiso int NOT NULL,
 	nomPermiso varchar(50) NOT NULL,
 	estado bit NOT NULL,
@@ -85,7 +84,7 @@ CREATE TABLE Tbl_PermisoxRol (
 ;
 
 CREATE TABLE Tbl_Persona ( 
-	cuiPersona int identity(1,1)  NOT NULL,
+	cuiPersona int NOT NULL,
 	priNomPersona varchar(50) NOT NULL,
 	segNomPersona varchar(50),
 	priApePersona varchar(50) NOT NULL,
@@ -114,22 +113,22 @@ CREATE TABLE Tbl_Sexo (
 ;
 
 CREATE TABLE Tbl_Solicitante ( 
-	cuiPersona int,
+	idPersona int,
 	idCredito int
 )
 ;
 
 CREATE TABLE Tbl_Tipo_Credito ( 
-	idTipCredito int identity(1,1)  NOT NULL,
+	idTipCredito int NOT NULL,
 	nomTipCredito varchar(50) NOT NULL,
 	estado bit NOT NULL
 )
 ;
 
-CREATE TABLE tbl_Tipo_Documento ( 
-	idTipoDocumento int identity(1,1)  NOT NULL,
+CREATE TABLE Tbl_Tipo_Documento ( 
+	idTipoDocumento int NOT NULL,
 	nomTipoDocumento varchar(50) NOT NULL,
-	estado bit NOT NULL
+	estado bit DEFAULT 1 NOT NULL
 )
 ;
 
@@ -137,9 +136,9 @@ CREATE TABLE Tbl_Usuario (
 	idUsuario int identity(1,1)  NOT NULL,
 	nomUsuario char(50) NOT NULL,
 	contraseñaUsuario char(12) NOT NULL,
+	idRol int,
 	cuiPersona int,
-	estado bit DEFAULT 1 NOT NULL,
-	idRol int
+	estado bit DEFAULT 1 NOT NULL
 )
 ;
 
@@ -188,7 +187,7 @@ ALTER TABLE Tbl_Tipo_Credito ADD CONSTRAINT PK_tbl_tipo_credito
 	PRIMARY KEY CLUSTERED (idTipCredito)
 ;
 
-ALTER TABLE tbl_Tipo_Documento ADD CONSTRAINT PK_tbl_Tipo_Documento 
+ALTER TABLE Tbl_Tipo_Documento ADD CONSTRAINT PK_tbl_Tipo_Documento 
 	PRIMARY KEY CLUSTERED (idTipoDocumento)
 ;
 
@@ -199,6 +198,14 @@ ALTER TABLE Tbl_Usuario ADD CONSTRAINT PK_Tbl_Usuario
 
 ALTER TABLE Tbl_Persona
 	ADD CONSTRAINT UQ_Tbl_Persona_cuiPersona UNIQUE (cuiPersona)
+;
+
+ALTER TABLE Tbl_Tipo_Credito
+	ADD CONSTRAINT UQ_Tbl_Tipo_Credito_nomTipCredito UNIQUE (nomTipCredito)
+;
+
+ALTER TABLE Tbl_Tipo_Documento
+	ADD CONSTRAINT UQ_Tbl_Tipo_Documento_nomTipoDocumento UNIQUE (nomTipoDocumento)
 ;
 
 ALTER TABLE Tbl_Usuario
@@ -219,19 +226,11 @@ ALTER TABLE Tbl_Detalle_Credito ADD CONSTRAINT FK_tbl_detalle_credito_tbl_credit
 ;
 
 ALTER TABLE Tbl_DocxCredito ADD CONSTRAINT FK_Tbl_Documento_tbl_Tipo_Documento 
-	FOREIGN KEY (idTipoDocumento) REFERENCES tbl_Tipo_Documento (idTipoDocumento)
+	FOREIGN KEY (idTipoDocumento) REFERENCES Tbl_Tipo_Documento (idTipoDocumento)
 ;
 
 ALTER TABLE Tbl_DocxCredito ADD CONSTRAINT FK_Tbl_DocxCredito_Tbl_Credito 
 	FOREIGN KEY (idCredito) REFERENCES Tbl_Credito (idCredito)
-;
-
-ALTER TABLE Tbl_Fiador ADD CONSTRAINT FK_Tbl_Fiador_Tbl_Credito 
-	FOREIGN KEY (idCredito) REFERENCES Tbl_Credito (idCredito)
-;
-
-ALTER TABLE Tbl_Fiador ADD CONSTRAINT FK_Tbl_Fiador_Tbl_Persona 
-	FOREIGN KEY (cuiPersona) REFERENCES Tbl_Persona (cuiPersona)
 ;
 
 ALTER TABLE Tbl_Letras_De_Pago ADD CONSTRAINT FK_tbl_letras_de_pago_tbl_credito 
@@ -250,20 +249,8 @@ ALTER TABLE Tbl_Persona ADD CONSTRAINT FK_tbl_persona_tbl_sexo
 	FOREIGN KEY (idSexo) REFERENCES Tbl_Sexo (idSexo)
 ;
 
-ALTER TABLE Tbl_Solicitante ADD CONSTRAINT FK_Tbl_Solicitante_Tbl_Credito 
-	FOREIGN KEY (idCredito) REFERENCES Tbl_Credito (idCredito)
-;
-
-ALTER TABLE Tbl_Solicitante ADD CONSTRAINT FK_Tbl_Solicitante_Tbl_Persona 
-	FOREIGN KEY (cuiPersona) REFERENCES Tbl_Persona (cuiPersona)
-;
-
 ALTER TABLE Tbl_Usuario ADD CONSTRAINT FK_Tbl_Usuario_tbl_persona 
 	FOREIGN KEY (cuiPersona) REFERENCES Tbl_Persona (cuiPersona)
-;
-
-ALTER TABLE Tbl_Usuario ADD CONSTRAINT FK_Tbl_Usuario_Tbl_Rol 
-	FOREIGN KEY (idRol) REFERENCES Tbl_Rol (idRol)
 ;
 
 
@@ -877,7 +864,7 @@ BEGIN
 
     -- Insert statements for procedure here
 	INSERT INTO [bd_credito].[dbo].[Tbl_Estado_Civil]
-           ([nomestadoCivil])
+           ([idEstCivil])
      VALUES
            (@nomestadoCivil)
 	           ;
@@ -1323,13 +1310,16 @@ GO
 CREATE PROCEDURE [dbo].[procCreditoBitacoraCrear]
 	-- Add the parameters for the stored procedure here
 	
-           @nomCredito		 varchar(50),
-           @monto			decimal(10,2),
-           @idusuarioCliente  int,
-           @idusuarioAgente	 int,
            @idTipCredito	int,
-           @interes		decimal(10,2),
-           @idEstado		int
+           @monto			decimal(10,2),
+		   @interes		decimal(10,2),
+           @idusuarioAgente	 int,
+		   @idEstado		int,
+		   @letras  int,
+           @creado datetime
+           
+           
+           
 
 AS
 BEGIN
@@ -1340,23 +1330,26 @@ BEGIN
     -- Insert statements for procedure here
 	INSERT INTO [dbo].[Tbl_Credito_Bitacora]
            (
-           [nomCredito]
+           [idTipCredito]
            ,[monto]
-           ,[idusuarioCliente]
+           ,[tasInteres]
            ,[idusuarioAgente]
-           ,[idTipCredito]
-           ,[interes]
-		   ,[idEstado] 
+           ,[idEstado]
+           ,[Letras]
+           ,[creado]
+            
           )
      VALUES
 
-          (@nomCredito,
+          (
+		  @idTipCredito,
            @monto,
-           @idusuarioCliente,
-           @idusuarioAgente,
-           @idTipCredito,
-           @interes	,
-           @idEstado)
+		   @interes	,
+           @idusuarioAgente,        
+           @idEstado,
+		   @letras,
+		   @creado
+		   )
 
 		end
 GO
@@ -1652,8 +1645,8 @@ SELECT @nomTipoDocumento=[nomTipoDocumento]
     -- Insert statements for procedure here
 UPDATE [bd_Credito].[dbo].[tbl_Tipo_Documento]
    SET 
-        [idTipoDocumento]	=	@idTipoDocumento
-      ,[nomTipoDocumento]	=	@nomTipoDocumento
+        
+      [nomTipoDocumento]	=	@nomTipoDocumento
       ,[estado]				=	@estado
       
  WHERE [bd_Credito].[dbo].[tbl_Tipo_Documento].[idTipoDocumento]=@idTipoDocumento
@@ -1703,7 +1696,7 @@ GO
 -- =============================================
 CREATE PROCEDURE [dbo].[procTipoDocumentoCrear]
 	-- Add the parameters for the stored procedure here
-	@nomRol nvarchar(50)
+	@nomDocumento nvarchar(50)
 	
 AS
 BEGIN
@@ -1712,14 +1705,18 @@ BEGIN
 	SET NOCOUNT ON;
 
     -- Insert statements for procedure here
-	INSERT INTO [bd_credito].[dbo].[Tbl_Rol]
-           ([nomRol]
-           )
+	INSERT INTO [dbo].[tbl_Tipo_Documento]
+           ([nomTipoDocumento]
+           ,estado)
      VALUES
-           (@nomRol)
+           (@nomDocumento,'1')
            ;
-END
 
+
+select * from [dbo].[tbl_Tipo_Documento]
+where [dbo].[tbl_Tipo_Documento].nomTipoDocumento=@nomDocumento
+END
+GO
 
 
 
@@ -1778,82 +1775,6 @@ BEGIN
 	SELECT *
   FROM [bd_Credito].[dbo].[tbl_Tipo_Documento]
 END
-
-
--- letra de pago
-/****** Object:  StoredProcedure [dbo].[procLetrasPagoBuscarxCredito]    Script Date: 14/05/2015 0:38:53 ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
--- =============================================
--- Author:		<Author,,Juan Ramirez>
--- Create date: <Create Date,12-05-15,>
--- Description:	<Description,Buscar un  registro de las letras de pago,>
--- =============================================
-CREATE PROCEDURE [dbo].[procLetrasPagoBuscarxCredito]
-	-- Add the parameters for the stored procedure here
-	@id int
-
-
-	
-AS
-BEGIN
-	-- SET NOCOUNT ON added to prevent extra result sets from
-	-- interfering with SELECT statements.
-	SET NOCOUNT ON;
-
-    -- Insert statements for procedure here
-	SELECT [idletPago]
-      ,[idCredito]
-      ,[letraPago]
-      ,[Saldo]
-      ,[interesxMora]
-      ,[estad]
-  FROM [dbo].[Tbl_Letras_De_Pago]
-where [dbo].[Tbl_Letras_De_Pago].idCredito=@id
-END
-
-GO
-
-
-
-/****** Object:  StoredProcedure [dbo].[procLetrasPagoMostrarTodo]    Script Date: 14/05/2015 0:40:02 ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
--- =============================================
--- Author:		<Author,,Juan Ramirez>
--- Create date: <Create Date,12-05-15,>
--- Description:	<Description,Mostrarar todo los registros de letras de pago,>
--- =============================================
-CREATE PROCEDURE [dbo].[procLetrasPagoMostrarTodo]
-	-- Add the parameters for the stored procedure here
-
-
-	
-AS
-BEGIN
-	-- SET NOCOUNT ON added to prevent extra result sets from
-	-- interfering with SELECT statements.
-	SET NOCOUNT ON;
-
-    -- Insert statements for procedure here
-	SELECT [idletPago]
-      ,[idCredito]
-      ,[letraPago]
-      ,[Saldo]
-      ,[interesxMora]
-      ,[estad]
-  FROM [dbo].[Tbl_Letras_De_Pago]
-END
-
-GO
 
 
 
