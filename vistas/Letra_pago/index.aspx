@@ -8,8 +8,11 @@
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="letras" Runat="Server">
-    <%
-        Response.Write(Page.RouteData.Values("id").ToString())
+    <%   If (Page.RouteData.Values("id")) Then
+            Response.Write("Credito No.")
+        
+        
+            Response.Write(Page.RouteData.Values("id").ToString())
         %>
 
  <div class="row text-center">
@@ -33,5 +36,9 @@
     </div>
 </div>
    
-
+    <%
+    Else
+        Response.Write("No hay Id Credito")
+    End If
+        %>
 </asp:Content>
