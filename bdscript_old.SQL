@@ -136,9 +136,9 @@ CREATE TABLE Tbl_Usuario (
 	idUsuario int identity(1,1)  NOT NULL,
 	nomUsuario char(50) NOT NULL,
 	contraseñaUsuario char(12) NOT NULL,
+	idRol int,
 	cuiPersona int,
-	estado bit DEFAULT 1 NOT NULL,
-	idRol int
+	estado bit DEFAULT 1 NOT NULL
 )
 ;
 
@@ -271,8 +271,7 @@ ALTER TABLE Tbl_Usuario ADD CONSTRAINT FK_Tbl_Usuario_tbl_persona
 
 ALTER TABLE Tbl_Usuario ADD CONSTRAINT FK_Tbl_Usuario_Tbl_Rol 
 	FOREIGN KEY (idRol) REFERENCES Tbl_Rol (idRol)
-;
-
+	;
 
 
 
