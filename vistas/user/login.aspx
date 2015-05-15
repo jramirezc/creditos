@@ -3,14 +3,12 @@
 <%@ Import Namespace="System.IO" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+
 </asp:Content>
 
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="usuario" Runat="Server">
-  
-    
-    
           <%  
               If (Not IsNothing(Session("usuario"))) Then%>
                   <div class="alert alert-dismissable alert-success">
@@ -67,7 +65,7 @@
                 </Columns>
             </asp:GridView>
           
-            <asp:SqlDataSource ID="validalogin" runat="server" ConnectionString="<%$ ConnectionStrings:creditoConnectionString %>" SelectCommand="procUsuarioLogin" SelectCommandType="StoredProcedure">
+            <asp:SqlDataSource ID="validalogin" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procUsuarioLogin" SelectCommandType="StoredProcedure">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="inputEmail" Name="nomUsuario" PropertyName="Text" Type="String" />
                     <asp:ControlParameter ControlID="inputPassword" Name="contraseñaUsuario" PropertyName="Text" Type="String" />
