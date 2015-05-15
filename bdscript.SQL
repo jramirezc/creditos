@@ -59,7 +59,7 @@ CREATE TABLE Tbl_Estado_Civil (
 ;
 
 CREATE TABLE Tbl_Fiador ( 
-	idPersona int,
+	cuiPersona int,
 	idCredito int
 )
 ;
@@ -113,7 +113,7 @@ CREATE TABLE Tbl_Sexo (
 ;
 
 CREATE TABLE Tbl_Solicitante ( 
-	idPersona int,
+	cuiPersona int,
 	idCredito int
 )
 ;
@@ -233,6 +233,14 @@ ALTER TABLE Tbl_DocxCredito ADD CONSTRAINT FK_Tbl_DocxCredito_Tbl_Credito
 	FOREIGN KEY (idCredito) REFERENCES Tbl_Credito (idCredito)
 ;
 
+ALTER TABLE Tbl_Fiador ADD CONSTRAINT FK_Tbl_Fiador_Tbl_Credito 
+	FOREIGN KEY (idCredito) REFERENCES Tbl_Credito (idCredito)
+;
+
+ALTER TABLE Tbl_Fiador ADD CONSTRAINT FK_Tbl_Fiador_Tbl_Persona 
+	FOREIGN KEY (cuiPersona) REFERENCES Tbl_Persona (cuiPersona)
+;
+
 ALTER TABLE Tbl_Letras_De_Pago ADD CONSTRAINT FK_tbl_letras_de_pago_tbl_credito 
 	FOREIGN KEY (idCredito) REFERENCES Tbl_Credito (idCredito)
 ;
@@ -247,6 +255,14 @@ ALTER TABLE Tbl_Persona ADD CONSTRAINT FK_tbl_persona_tbl_estado_civil
 
 ALTER TABLE Tbl_Persona ADD CONSTRAINT FK_tbl_persona_tbl_sexo 
 	FOREIGN KEY (idSexo) REFERENCES Tbl_Sexo (idSexo)
+;
+
+ALTER TABLE Tbl_Solicitante ADD CONSTRAINT FK_Tbl_Solicitante_Tbl_Credito 
+	FOREIGN KEY (idCredito) REFERENCES Tbl_Credito (idCredito)
+;
+
+ALTER TABLE Tbl_Solicitante ADD CONSTRAINT FK_Tbl_Solicitante_Tbl_Persona 
+	FOREIGN KEY (cuiPersona) REFERENCES Tbl_Persona (cuiPersona)
 ;
 
 ALTER TABLE Tbl_Usuario ADD CONSTRAINT FK_Tbl_Usuario_tbl_persona 
