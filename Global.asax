@@ -15,6 +15,13 @@
         routes.MapPageRoute("", _
     "login", _
     "~/vistas/user/login.aspx")
+        'rutas de credito
+        routes.MapPageRoute("", _
+    "credito", _
+    "~/vistas/credito/index.aspx")
+        routes.MapPageRoute("", _
+    "credito/crear", _
+    "~/vistas/credito/crear.aspx")
         ' letras de pago rutas
         routes.MapPageRoute("", _
     "letras/{id}", _
