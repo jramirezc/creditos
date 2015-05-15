@@ -17,9 +17,12 @@
     "~/vistas/user/login.aspx")
         ' letras de pago rutas
         routes.MapPageRoute("", _
-    "letras/{id}", _
+    "letras/ver/{id}", _
     "~/vistas/Letra_pago/index.aspx")
-                'Rutas de  Tabla tipo documento     
+        routes.MapPageRoute("", _
+    "letras/crear", _
+    "~/vistas/Letra_pago/create.aspx")
+        'Rutas de  Tabla tipo documento     
         routes.MapPageRoute("", _
      "tipoDocumento", _
      "~/vistas/tipoDocumento/Index.aspx")
