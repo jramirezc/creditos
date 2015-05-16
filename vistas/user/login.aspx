@@ -52,7 +52,7 @@
             <asp:TextBox type="text" id="inputEmail" runat="server"  class="form-control text-center input-lg" placeholder="Username" required="" autofocus=""></asp:TextBox>
             <asp:TextBox type="password" id="inputPassword" runat="server"  class="form-control text-center input-lg" placeholder="Contrasña" required=""></asp:TextBox>
       
-        <div class="valida" style="display:none">
+        <div class="valida" style="display:noe">
           
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="idUsuario" DataSourceID="validalogin">
                 <Columns>
