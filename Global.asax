@@ -25,6 +25,9 @@
         routes.MapPageRoute("", _
     "credito/buscar", _
     "~/vistas/credito/buscar.aspx")
+        routes.MapPageRoute("", _
+           "credito/ver/{id}", _
+           "~/vistas/credito/ver.aspx")
         ' letras de pago rutas
         routes.MapPageRoute("", _
     "letras/{id}", _

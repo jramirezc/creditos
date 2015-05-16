@@ -149,6 +149,8 @@
                <asp:ContentPlaceHolder id="credito" runat="server"></asp:ContentPlaceHolder>
                <!-- Contenedor de las Vistas de Letras de PAgo-->
                 <asp:ContentPlaceHolder id="letras" runat="server"></asp:ContentPlaceHolder>
+               <!-- Contenedor de las Vistas de persona-->
+                <asp:ContentPlaceHolder id="presona" runat="server"></asp:ContentPlaceHolder>
            </div>
         </div>
 </div>
