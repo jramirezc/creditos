@@ -2,10 +2,10 @@
 
 <%@ Import Namespace="System.IO" %>
 
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-
-</asp:Content>
-
+    <title>Inicio de Sesion</title>
+    </asp:Content>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="usuario" Runat="Server">
@@ -52,7 +52,7 @@
             <asp:TextBox type="text" id="inputEmail" runat="server"  class="form-control text-center input-lg" placeholder="Username" required="" autofocus=""></asp:TextBox>
             <asp:TextBox type="password" id="inputPassword" runat="server"  class="form-control text-center input-lg" placeholder="Contrasña" required=""></asp:TextBox>
       
-        <div class="valida" style="display:noe">
+        <div class="valida" style="display:none">
           
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="idUsuario" DataSourceID="validalogin">
                 <Columns>
