@@ -7,7 +7,7 @@
 
    <div class="panel panel-material-blue-grey" >
                      <div class="panel-heading">
-                            <h3 class="panel-title">Formulario Crear Credito</h3>
+                            <h3 class="panel-title">Creditos</h3>
                      </div>
                      <div class="panel-body">
     <div class="row">
@@ -30,7 +30,8 @@
             <asp:SqlDataSource ID="vercreditos" runat="server" ConnectionString="<%$ ConnectionStrings:tonyBD %>" SelectCommand="procCreditoMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
         </div>
         <div class="col-sm-1 ">
-            <a type="button" href="\credito/crear" class="btn btn-fab btn-raised  btn-material-green "><i class="fa fa-plus-circle"></i></a>
+
+            <a type="button" href="\credito/crear" class="btn btn-fab btn-raised  btn-material-green-600 "data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom"><i class="fa fa-plus-circle"></i></a>
         </div>
     </div>
     </div>

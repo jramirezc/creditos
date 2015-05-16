@@ -9,7 +9,7 @@
     
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-                <div class="panel panel-success" >
+                <div class="panel panel-warning" >
                      <div class="panel-heading">
                             <h3 class="panel-title">Formulario Crear Credito</h3>
                      </div>
