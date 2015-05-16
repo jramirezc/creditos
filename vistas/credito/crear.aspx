@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/layout.master" AutoEventWireup="true" CodeFile="crear.aspx.cs" Inherits="vistas_credito_crear" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/layout.master" AutoEventWireup="false" CodeFile="crear.aspx.vb" Inherits="vistas_credito_crear" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <title>Formulario Credito</title>
@@ -41,6 +41,6 @@
             </div>
        </div>
 </div>
-    <asp:SqlDataSource ID="EstadoCredito" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procEstadoMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
-    <asp:SqlDataSource ID="tipoCredito" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procTipoCreditoMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="EstadoCredito" runat="server" ConnectionString="<%$ ConnectionStrings:tonyBD %>" SelectCommand="procEstadoMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="tipoCredito" runat="server" ConnectionString="<%$ ConnectionStrings:tonyBD %>" SelectCommand="procTipoCreditoMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
 </asp:Content>
