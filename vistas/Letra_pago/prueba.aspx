@@ -20,6 +20,10 @@
                 
                       <br />
                      
+                <h6>Textarea</h6>
+  <textarea class="form-control" placeholder="textarea label"></textarea>
+  <textarea class="form-control floating-label" placeholder="textarea floating label"></textarea>
+
                             
 
                           
