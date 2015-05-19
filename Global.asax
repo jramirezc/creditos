@@ -15,14 +15,30 @@
         routes.MapPageRoute("", _
     "login", _
     "~/vistas/user/login.aspx")
-        'Rutas de  Tabla tipo documento     
+'================rutas de credito==================================================
+        routes.MapPageRoute("", _
+    "credito", _
+    "~/vistas/credito/index.aspx")
+        routes.MapPageRoute("", _
+    "credito/crear", _
+    "~/vistas/credito/crear.aspx")
+        routes.MapPageRoute("", _
+    "credito/buscar", _
+    "~/vistas/credito/buscar.aspx")
+        routes.MapPageRoute("", _
+           "credito/ver/{id}", _
+           "~/vistas/credito/ver.aspx")
+        ' letras de pago rutas
+        routes.MapPageRoute("", _
+    "letras/{id}", _
+    "~/vistas/Letra_pago/index.aspx")
+                'Rutas de  Tabla tipo documento     
         routes.MapPageRoute("", _
      "tipoDocumento", _
      "~/vistas/tipoDocumento/Index.aspx")
         routes.MapPageRoute("", _
     "tipoDocumento/crear", _
     "~/vistas/tipoDocumento/Crear.aspx")
-       
         
     End Sub
     Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)
