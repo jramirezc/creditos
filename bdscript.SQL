@@ -1,3 +1,10 @@
+CREATE TABLE Tbl_Campo ( 
+	idCampo int identity(1,1)  NOT NULL,
+	nomCampo varchar(50),
+	estado bit
+)
+;
+
 CREATE TABLE Tbl_Credito ( 
 	idCredito int identity(1,1)  NOT NULL,
 	idTipCredito int,
@@ -44,7 +51,7 @@ CREATE TABLE Tbl_DetalleCredito (
 CREATE TABLE Tbl_DocxCredito ( 
 	idDocumento int identity(1,1)  NOT NULL,
 	idPersona int NOT NULL,
-	idTipoDocumento int,
+	idTipDocumento int,
 	fecha datetime,
 	idCredito int,
 	estado bit
@@ -68,12 +75,12 @@ CREATE TABLE Tbl_Estado_Civil (
 CREATE TABLE Tbl_EvaluacionDomiciliar ( 
 	idEvaDomiciliar int identity(1,1)  NOT NULL,
 	idCredito int,
-	idArea int,
+	idCampo int,
 	agua bit,
 	luz bit,
-	servicioBasura bit,
-	servicioCable binary(),
-	areaPredio decimal(10,2),
+	serBasura bit,
+	serCable binary(10),
+	area decimal(10,2),
 	estado bit
 )
 ;
@@ -84,7 +91,7 @@ CREATE TABLE Tbl_EvaluacionFinaciera (
 	ingresos decimal(10,2),
 	egresos decimal(10,2),
 	capital decimal(10,2),
-	capacidad Pago decimal(10,2),
+	capPago decimal(10,2),
 	estado bit
 )
 ;
@@ -181,8 +188,8 @@ CREATE TABLE Tbl_Tipo_Credito (
 ;
 
 CREATE TABLE Tbl_TipoDocumento ( 
-	idTipoDocumento int identity(,1)  NOT NULL,
-	nomTipoDocumento varchar(50),
+	idTipDocumento int identity(1,1)  NOT NULL,
+	nomTipDocumento varchar(50),
 	estado bit DEFAULT 1 NOT NULL
 )
 ;
@@ -204,13 +211,10 @@ CREATE TABLE Tbl_UsuariosxCredito (
 )
 ;
 
-CREATE TABLE TblArea ( 
-	idArea int identity(1,1)  NOT NULL,
-	nomArea varchar(50),
-	estado bit
-)
-;
 
+ALTER TABLE Tbl_Campo ADD CONSTRAINT PK_TblArea 
+	PRIMARY KEY CLUSTERED (idCampo)
+;
 
 ALTER TABLE Tbl_Credito ADD CONSTRAINT PK_tbl_credito 
 	PRIMARY KEY CLUSTERED (idCredito)
@@ -277,15 +281,11 @@ ALTER TABLE Tbl_Tipo_Credito ADD CONSTRAINT PK_tbl_tipo_credito
 ;
 
 ALTER TABLE Tbl_TipoDocumento ADD CONSTRAINT PK_tbl_Tipo_Documento 
-	PRIMARY KEY CLUSTERED (idTipoDocumento)
+	PRIMARY KEY CLUSTERED (idTipDocumento)
 ;
 
 ALTER TABLE Tbl_Usuario ADD CONSTRAINT PK_Tbl_Usuario 
 	PRIMARY KEY CLUSTERED (idUsuario)
-;
-
-ALTER TABLE TblArea ADD CONSTRAINT PK_TblArea 
-	PRIMARY KEY CLUSTERED (idArea)
 ;
 
 
@@ -331,7 +331,7 @@ ALTER TABLE Tbl_DetalleCredito ADD CONSTRAINT FK_tbl_detalle_credito_tbl_credito
 ;
 
 ALTER TABLE Tbl_DocxCredito ADD CONSTRAINT FK_Tbl_Documento_tbl_Tipo_Documento 
-	FOREIGN KEY (idTipoDocumento) REFERENCES Tbl_TipoDocumento (idTipoDocumento)
+	FOREIGN KEY (idTipDocumento) REFERENCES Tbl_TipoDocumento (idTipDocumento)
 ;
 
 ALTER TABLE Tbl_DocxCredito ADD CONSTRAINT FK_Tbl_DocxCredito_Tbl_Credito 
@@ -343,7 +343,7 @@ ALTER TABLE Tbl_EvaluacionDomiciliar ADD CONSTRAINT FK_Tbl_EvaluacionDomiciliar_
 ;
 
 ALTER TABLE Tbl_EvaluacionDomiciliar ADD CONSTRAINT FK_Tbl_EvaluacionDomiciliar_TblArea 
-	FOREIGN KEY (idArea) REFERENCES TblArea (idArea)
+	FOREIGN KEY (idCampo) REFERENCES Tbl_Campo (idCampo)
 ;
 
 ALTER TABLE Tbl_EvaluacionFinaciera ADD CONSTRAINT FK_Tbl_EvaluacionFinaciera_Tbl_Credito 
@@ -384,6 +384,10 @@ ALTER TABLE Tbl_Persona ADD CONSTRAINT FK_tbl_persona_tbl_sexo
 
 ALTER TABLE Tbl_Usuario ADD CONSTRAINT FK_Tbl_Usuario_tbl_persona 
 	FOREIGN KEY (cuiPersona) REFERENCES Tbl_Persona (cuiPersona)
+;
+
+ALTER TABLE Tbl_Usuario ADD CONSTRAINT FK_Tbl_Usuario_Tbl_Rol 
+	FOREIGN KEY (idRol) REFERENCES Tbl_Rol (idRol)
 ;
 
 ALTER TABLE Tbl_UsuariosxCredito ADD CONSTRAINT FK_Tbl_UsuariosxCredito_Tbl_Credito 
