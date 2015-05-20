@@ -2,10 +2,10 @@
 
 <%@ Import Namespace="System.IO" %>
 
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-
-</asp:Content>
-
+    <title>Inicio de Sesion</title>
+    </asp:Content>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="usuario" Runat="Server">

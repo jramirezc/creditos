@@ -13,7 +13,7 @@
                             
                             <span class="label label-primary">Ingrese</span>
                             <div class="label-material-green-50  ">
-                                <asp:TextBox ID="TbxIdCredito" runat="server" CssClass="form-control" placeholder="Ingreso ID Credito"> </asp:TextBox>
+                                <asp:TextBox ID="TbxIdCredito" runat="server" CssClass="form-control floating-label" placeholder="Ingreso ID Credito"> </asp:TextBox>
                             </div>
                             
                             </br>
