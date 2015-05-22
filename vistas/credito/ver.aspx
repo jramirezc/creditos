@@ -3,13 +3,15 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+      
     <title>Formulario Buscar Credito</title>
     </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="credito" Runat="Server">
-    
+    </br>
+      </br>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-                <div class="panel panel-warning" >
+                <div class="panel panel-success" >
                      <div class="panel-heading">
                             <h3 class="panel-title">Formulario Crear Credito</h3>
                      </div>
