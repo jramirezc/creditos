@@ -5,20 +5,20 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "creditos", ".", "{CC806ECC-
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
 		Debug.AspNetCompiler.VirtualPath = "/creditos"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\creditos\"
+		Debug.AspNetCompiler.PhysicalPath = "..\creditos\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\creditos\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/creditos"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\creditos\"
+		Release.AspNetCompiler.PhysicalPath = "..\creditos\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\creditos\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "52950"
+		VWDPort = "49365"
 	EndProjectSection
 EndProject
 Global
