@@ -17,9 +17,9 @@
                             <div class="form-group">
                              
                                     
-                                <asp:SqlDataSource ID="verCreditosql" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procCreditoBuscar" SelectCommandType="StoredProcedure" UpdateCommand="UPDATE Tbl_Credito SET idTipCredito = @idTipCredito, monto = @monto,  mes = @mes, idEstado = @idEstado, idTasa = @idTasa">
+                                <asp:SqlDataSource ID="verCreditosql" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procCreditoBuscar" SelectCommandType="StoredProcedure" UpdateCommand="UPDATE Tbl_Credito SET idTipCredito = @idTipCredito, monto = @monto,  mes = @mes, idEstado = @idEstado, idTasa = @idTasa where idCredito=@idCredito">
                                     <SelectParameters>
-                                        <asp:RouteParameter Name="id" RouteKey="id" Type="Int32" />
+                                        <asp:RouteParameter Name="id" RouteKey="id" Type="Int32" DefaultValue="" />
                                     </SelectParameters>
                                     <UpdateParameters>
                                         <asp:Parameter Name="idTipCredito" />
@@ -27,6 +27,7 @@
                                         <asp:Parameter Name="mes" />
                                         <asp:Parameter Name="idEstado" />
                                         <asp:Parameter Name="idTasa" />
+                                        <asp:Parameter Name="idCredito" />
                                     </UpdateParameters>
                                 </asp:SqlDataSource>
                                 <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
@@ -50,7 +51,6 @@
                                                     <ItemTemplate>
                                                         &nbsp;<asp:Label ID="nomTasaLabel" runat="server" Text='<%# Eval("nomTasa") %>' />
                                                         <br />
-                                                        <br />
                                                     </ItemTemplate>
                                                 </asp:DataList>
                                                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="SELECT [nomTasa] FROM [Tbl_Tasa] WHERE ([idTasa] = @idTasa)">
@@ -62,13 +62,26 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="idEstado" SortExpression="idEstado">
                                             <EditItemTemplate>
-                                                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("idEstado") %>'></asp:TextBox>
+                                                <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control" DataSourceID="srcEstadoMostarTodo" DataTextField="nomEstado" DataValueField="idEstado" SelectedValue='<%# Bind("idEstado") %>'>
+                                                </asp:DropDownList>
+                                                <asp:SqlDataSource ID="srcEstadoMostarTodo" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procEstadoMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                                             </EditItemTemplate>
                                             <InsertItemTemplate>
                                                 <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("idEstado") %>'></asp:TextBox>
                                             </InsertItemTemplate>
                                             <ItemTemplate>
-                                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("idEstado") %>'></asp:Label>
+                                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("idEstado") %>' Visible="False"></asp:Label>
+                                                <asp:SqlDataSource ID="srcEstadoBuscar" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="SELECT [nomEstado] FROM [Tbl_Estado] WHERE ([idEstado] = @idEstado)">
+                                                    <SelectParameters>
+                                                        <asp:ControlParameter ControlID="Label2" Name="idEstado" PropertyName="Text" Type="Int32" />
+                                                    </SelectParameters>
+                                                </asp:SqlDataSource>
+                                                <asp:DataList ID="DataList2" runat="server" DataSourceID="srcEstadoBuscar">
+                                                    <ItemTemplate>
+                                                        &nbsp;<asp:Label ID="nomEstadoLabel" runat="server" Text='<%# Eval("nomEstado") %>' />
+                                                        <br />
+                                                    </ItemTemplate>
+                                                </asp:DataList>
                                             </ItemTemplate>
                                         </asp:TemplateField>
                                         <asp:BoundField DataField="mes" HeaderText="mes" SortExpression="mes" />
