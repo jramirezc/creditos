@@ -66,6 +66,6 @@
         </asp:SqlDataSource>
 
     <asp:SqlDataSource ID="tasas" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procTasaMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
-    <asp:SqlDataSource ID="tipoCredito" runat="server" ConnectionString="<%$ ConnectionStrings:tonyBD %>" SelectCommand="procTipoCreditoMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="tipoCredito" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procTipoCreditoMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
         
 </asp:Content>

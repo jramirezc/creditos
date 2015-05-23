@@ -17,16 +17,16 @@
                             <div class="form-group">
                              
                                     
-                                <asp:SqlDataSource ID="verCreditosql" runat="server" ConnectionString="<%$ ConnectionStrings:tonyBD %>" SelectCommand="procCreditoBuscar" SelectCommandType="StoredProcedure" UpdateCommand="UPDATE Tbl_Credito SET idTipCredito = @idTipCredito, monto = @monto, tasInteres = @tasInteres , años = @años, idEstado = @idEstado">
+                                <asp:SqlDataSource ID="verCreditosql" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procCreditoBuscar" SelectCommandType="StoredProcedure" UpdateCommand="UPDATE Tbl_Credito SET idTipCredito = @idTipCredito, monto = @monto,  mes = @mes, idEstado = @idEstado, idTasa = @idTasa">
                                     <SelectParameters>
                                         <asp:RouteParameter Name="id" RouteKey="id" Type="Int32" />
                                     </SelectParameters>
                                     <UpdateParameters>
                                         <asp:Parameter Name="idTipCredito" />
                                         <asp:Parameter Name="monto" />
-                                        <asp:Parameter Name="tasInteres" />
-                                        <asp:Parameter Name="años" />
+                                        <asp:Parameter Name="mes" />
                                         <asp:Parameter Name="idEstado" />
+                                        <asp:Parameter Name="idTasa" />
                                     </UpdateParameters>
                                 </asp:SqlDataSource>
                                 <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
@@ -35,35 +35,45 @@
                                         <asp:BoundField DataField="idCredito" HeaderText="idCredito" InsertVisible="False" ReadOnly="True" SortExpression="idCredito" />
                                         <asp:BoundField DataField="idTipCredito" HeaderText="idTipCredito" SortExpression="idTipCredito" />
                                         <asp:BoundField DataField="monto" HeaderText="monto" SortExpression="monto" />
-                                        <asp:BoundField DataField="tasInteres" HeaderText="tasInteres" SortExpression="tasInteres" />
-                                        <asp:BoundField DataField="idusuarioAgente" HeaderText="idusuarioAgente" ReadOnly="True" SortExpression="idusuarioAgente" />
-                                        <asp:TemplateField HeaderText="idEstado" SortExpression="idEstado">
+                                        <asp:TemplateField HeaderText="idTasa" SortExpression="idTasa">
                                             <EditItemTemplate>
-                                                <asp:DropDownList ID="DropDownList1" runat="server"  SelectedValue='<%# Bind("idEstado") %>' CssClass="form-control" DataSourceID="SqlDataSource1" DataTextField="nomEstado" DataValueField="idEstado">
+                                                <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="srcTasasMostarTodo" DataTextField="nomTasa" DataValueField="idTasa" SelectedValue='<%# Bind("idTasa") %>' CssClass="form-control">
                                                 </asp:DropDownList>
-                                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:tonyBD %>" SelectCommand="procEstadoMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                                                <asp:SqlDataSource ID="srcTasasMostarTodo" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procTasaMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                                             </EditItemTemplate>
                                             <InsertItemTemplate>
-                                                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("idEstado") %>'></asp:TextBox>
+                                                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("idTasa") %>'></asp:TextBox>
                                             </InsertItemTemplate>
                                             <ItemTemplate>
-                                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("idEstado") %>'></asp:Label>
-                                                <asp:Label ID="Label2" runat="server"></asp:Label>
-                                                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:tonyBD %>" SelectCommand="SELECT [nomEstado] FROM [Tbl_Estado] WHERE ([idEstado] = @idEstado)">
+                                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("idTasa") %>' Visible="False"></asp:Label>
+                                                <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1">
+                                                    <ItemTemplate>
+                                                        &nbsp;<asp:Label ID="nomTasaLabel" runat="server" Text='<%# Eval("nomTasa") %>' />
+                                                        <br />
+                                                        <br />
+                                                    </ItemTemplate>
+                                                </asp:DataList>
+                                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="SELECT [nomTasa] FROM [Tbl_Tasa] WHERE ([idTasa] = @idTasa)">
                                                     <SelectParameters>
-                                                        <asp:ControlParameter ControlID="Label1" Name="idEstado" PropertyName="Text" Type="Int32" />
+                                                        <asp:ControlParameter ControlID="Label1" Name="idTasa" PropertyName="Text" Type="Int32" />
                                                     </SelectParameters>
                                                 </asp:SqlDataSource>
-                                                <asp:DetailsView ID="DetailsView2" runat="server" AutoGenerateRows="False" DataSourceID="SqlDataSource2" Height="50px" Width="125px">
-                                                    <Fields>
-                                                        <asp:BoundField DataField="nomEstado" SortExpression="nomEstado" />
-                                                    </Fields>
-                                                </asp:DetailsView>
                                             </ItemTemplate>
                                         </asp:TemplateField>
-                                        <asp:BoundField DataField="años" HeaderText="años" SortExpression="años" />
-                                        <asp:BoundField DataField="creado" HeaderText="creado" ReadOnly="True" SortExpression="creado" />
-                                        <asp:CommandField ShowEditButton="True" EditText="&lt;i class=&quot;fa fa-pencil-square-o&quot;&gt;&lt;/i&gt; Editar" UpdateText="&lt;i class=&quot;fa fa-floppy-o&quot;&gt;&lt;/i&gt;Grabar">
+                                        <asp:TemplateField HeaderText="idEstado" SortExpression="idEstado">
+                                            <EditItemTemplate>
+                                                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("idEstado") %>'></asp:TextBox>
+                                            </EditItemTemplate>
+                                            <InsertItemTemplate>
+                                                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("idEstado") %>'></asp:TextBox>
+                                            </InsertItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("idEstado") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:BoundField DataField="mes" HeaderText="mes" SortExpression="mes" />
+                                        <asp:BoundField DataField="creado" HeaderText="creado" SortExpression="creado" />
+                                        <asp:CommandField ShowEditButton="True">
                                         <ControlStyle CssClass="btn btn-warning" />
                                         </asp:CommandField>
                                     </Fields>

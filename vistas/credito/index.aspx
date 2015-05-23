@@ -21,7 +21,10 @@
                     <asp:BoundField DataField="idEstado" HeaderText="idEstado" SortExpression="idEstado" />
                     <asp:BoundField DataField="mes" HeaderText="mes" SortExpression="mes" />
                     <asp:BoundField DataField="creado" HeaderText="creado" SortExpression="creado" />
-                    <asp:HyperLinkField />
+                     <asp:HyperLinkField DataNavigateUrlFields="idCredito" DataNavigateUrlFormatString="~/credito/ver/{0}" DataTextField="idTipCredito" DataTextFormatString="&lt;i class=&quot;fa fa-eye fa-2x&quot;&gt;&lt;/i&gt;" >
+                    <ControlStyle CssClass="btn btn-material-blue" />
+                    </asp:HyperLinkField>
+                    
                 </Columns>
             </asp:GridView>
             <asp:SqlDataSource ID="vercreditos" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procCreditoMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
