@@ -28,10 +28,10 @@
     </div>
         
 <span class="label label-success">tipo Credito</span>               
-<asp:DropDownList placeholder="000.00" ID="dtipoCredito" runat="server" DataSourceID="tipoCredito" DataTextField="nomTipCredito" DataValueField="idTipCredito" CssClass="form-control"></asp:DropDownList>
+<asp:DropDownList placeholder="000.00" ID="dtipoCredito" runat="server" CssClass="form-control"></asp:DropDownList>
 
 <span class="label label-success">Estado</span>
-<asp:DropDownList ID="estados" runat="server"  CssClass="form-control" DataSourceID="EstadoCredito" DataTextField="nomEstado" DataValueField="idEstado"></asp:DropDownList>
+<asp:DropDownList ID="estados" runat="server"  CssClass="form-control"></asp:DropDownList>
 
 <span class="label label-success">Años a Pagar</span>
                 <asp:TextBox class="form-control floating-label" id="años" runat="server" type="text" placeholder="XX años" data-hint="You should really write something here">
@@ -45,17 +45,7 @@
        </div>
 </div>
 
-    <asp:GridView ID="muestrainsertadocredito" runat="server" DataSourceID="srcCreditoCrear" AutoGenerateColumns="False" DataKeyNames="idCredito">
-        <Columns>
-            <asp:BoundField DataField="idCredito" HeaderText="idCredito" InsertVisible="False" ReadOnly="True" SortExpression="idCredito" />
-            <asp:BoundField DataField="idTipCredito" HeaderText="idTipCredito" SortExpression="idTipCredito" />
-            <asp:BoundField DataField="monto" HeaderText="monto" SortExpression="monto" />
-            <asp:BoundField DataField="tasInteres" HeaderText="tasInteres" SortExpression="tasInteres" />
-            <asp:BoundField DataField="idusuarioAgente" HeaderText="idusuarioAgente" SortExpression="idusuarioAgente" />
-            <asp:BoundField DataField="idEstado" HeaderText="idEstado" SortExpression="idEstado" />
-            <asp:BoundField DataField="años" HeaderText="años" SortExpression="años" />
-            <asp:BoundField DataField="creado" HeaderText="creado" SortExpression="creado" />
-        </Columns>
+    <asp:GridView ID="muestrainsertadocredito" runat="server" AutoGenerateColumns="False">
         </asp:GridView>
 
         <asp:SqlDataSource ID="srcCreditoCrear" runat="server" ConnectionString="<%$ ConnectionStrings:tonyBD %>" SelectCommand="procCreditoCrear" SelectCommandType="StoredProcedure">

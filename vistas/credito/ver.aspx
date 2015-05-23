@@ -17,17 +17,7 @@
                             <div class="form-group">
                              
                                     
-                                <asp:SqlDataSource ID="verCreditosql" runat="server" ConnectionString="<%$ ConnectionStrings:tonyBD %>" SelectCommand="procCreditoBuscar" SelectCommandType="StoredProcedure" UpdateCommand="UPDATE Tbl_Credito SET idTipCredito = @idTipCredito, monto = @monto, tasInteres = @tasInteres , años = @años, idEstado = @idEstado">
-                                    <SelectParameters>
-                                        <asp:RouteParameter Name="id" RouteKey="id" Type="Int32" />
-                                    </SelectParameters>
-                                    <UpdateParameters>
-                                        <asp:Parameter Name="idTipCredito" />
-                                        <asp:Parameter Name="monto" />
-                                        <asp:Parameter Name="tasInteres" />
-                                        <asp:Parameter Name="años" />
-                                        <asp:Parameter Name="idEstado" />
-                                    </UpdateParameters>
+                                <asp:SqlDataSource ID="verCreditosql" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="SELECT * FROM [Tbl_Credito]">
                                 </asp:SqlDataSource>
                                 <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" CssClass="table" DataKeyNames="idCredito" DataSourceID="verCreditosql" Height="50px" Width="125px">
                                     <Fields>
