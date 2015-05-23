@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/layout.master" AutoEventWireup="true" CodeFile="create.aspx.cs" Inherits="vistas_Letra_pago_create" %>
-
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/layout.master" AutoEventWireup="false" CodeFile="crear.aspx.vb" Inherits="vistas_Letra_pago_crear" %>
 
 <asp:Content ID="Content6" ContentPlaceHolderID="letras" Runat="Server">
  <div class="panel panel-primary">
@@ -79,4 +78,5 @@
     </asp:SqlDataSource>
 
 </asp:Content>
+
 
