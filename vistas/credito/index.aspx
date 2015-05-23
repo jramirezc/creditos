@@ -12,9 +12,19 @@
                      <div class="panel-body">
     <div class="row">
         <div class="col-sm-11">
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table ">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table " DataKeyNames="idCredito" DataSourceID="vercreditos">
+                <Columns>
+                    <asp:BoundField DataField="idCredito" HeaderText="idCredito" InsertVisible="False" ReadOnly="True" SortExpression="idCredito" />
+                    <asp:BoundField DataField="idTipCredito" HeaderText="idTipCredito" SortExpression="idTipCredito" />
+                    <asp:BoundField DataField="monto" HeaderText="monto" SortExpression="monto" />
+                    <asp:BoundField DataField="idTasa" HeaderText="idTasa" SortExpression="idTasa" />
+                    <asp:BoundField DataField="idEstado" HeaderText="idEstado" SortExpression="idEstado" />
+                    <asp:BoundField DataField="mes" HeaderText="mes" SortExpression="mes" />
+                    <asp:BoundField DataField="creado" HeaderText="creado" SortExpression="creado" />
+                    <asp:HyperLinkField />
+                </Columns>
             </asp:GridView>
-            <asp:SqlDataSource ID="vercreditos" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="SELECT * FROM [Tbl_Campo]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="vercreditos" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procCreditoMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
         </div>
         <div class="col-sm-1 ">
 
