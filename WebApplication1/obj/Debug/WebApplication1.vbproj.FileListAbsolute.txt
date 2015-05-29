@@ -1,0 +1,24 @@
+c:\Users\Luis\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll
+c:\Users\Luis\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+c:\Users\Luis\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\WebApplication1.xml
+c:\Users\Luis\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.resources
+c:\Users\Luis\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
+c:\Users\Luis\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+c:\Users\Luis\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.xml
+c:\Users\Luis\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+F:\Documentos tony\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll
+F:\Documentos tony\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+F:\Documentos tony\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\WebApplication1.xml
+F:\Documentos tony\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.resources
+F:\Documentos tony\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
+F:\Documentos tony\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+F:\Documentos tony\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.xml
+F:\Documentos tony\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+F:\Documentos tony\GitHub\credito\credito\WebApplication1\obj\Debug\WebApplication1.Resources.resources
+F:\Documentos tony\GitHub\credito\credito\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
+F:\Documentos tony\GitHub\credito\credito\WebApplication1\obj\Debug\WebApplication1.dll
+F:\Documentos tony\GitHub\credito\credito\WebApplication1\obj\Debug\WebApplication1.xml
+F:\Documentos tony\GitHub\credito\credito\WebApplication1\obj\Debug\WebApplication1.pdb
+F:\Documentos tony\GitHub\credito\credito\WebApplication1\bin\WebApplication1.dll
+F:\Documentos tony\GitHub\credito\credito\WebApplication1\bin\WebApplication1.pdb
+F:\Documentos tony\GitHub\credito\credito\WebApplication1\bin\WebApplication1.xml
