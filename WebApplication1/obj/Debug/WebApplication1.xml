@@ -86,30 +86,31 @@ Control login.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm6.text1">
+</member><member name="P:WebApplication1.My.MyWebExtension.Computer">
 	<summary>
-Control text1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.WebForm6.text2">
+ Devuelve información sobre el equipo host.
+ </summary>
+</member><member name="P:WebApplication1.My.MyWebExtension.User">
 	<summary>
-Control text2.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.WebForm6.Button11">
+ Devuelve información del usuario web actual.
+ </summary>
+</member><member name="P:WebApplication1.My.MyWebExtension.Request">
 	<summary>
-Control Button11.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
+ Devuelve un objeto Request.
+ </summary>
+</member><member name="P:WebApplication1.My.MyWebExtension.Response">
+	<summary>
+ Devuelve un objeto Response.
+ </summary>
+</member><member name="P:WebApplication1.My.MyWebExtension.Log">
+	<summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member><member name="T:WebApplication1.My.MyWebExtension">
+	<summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+	<remarks></remarks>
 </member><member name="F:WebApplication1.WebForm3.TextBox2">
 	<summary>
 Control TextBox2.
@@ -129,6 +130,22 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:WebApplication1.WebForm3.Button1">
 	<summary>
 Control Button1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm4.Label2">
+	<summary>
+Control Label2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm4.Button3">
+	<summary>
+Control Button3.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -174,17 +191,25 @@ Control ContentPlaceHolder1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm4.Label2">
+</member><member name="F:WebApplication1.WebForm6.text1">
 	<summary>
-Control Label2.
+Control text1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm4.Button3">
+</member><member name="F:WebApplication1.WebForm6.text2">
 	<summary>
-Control Button3.
+Control text2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm6.Button11">
+	<summary>
+Control Button11.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -278,31 +303,6 @@ Control SqlDataSource2.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="P:WebApplication1.My.MyWebExtension.Computer">
-	<summary>
- Devuelve información sobre el equipo host.
- </summary>
-</member><member name="P:WebApplication1.My.MyWebExtension.User">
-	<summary>
- Devuelve información del usuario web actual.
- </summary>
-</member><member name="P:WebApplication1.My.MyWebExtension.Request">
-	<summary>
- Devuelve un objeto Request.
- </summary>
-</member><member name="P:WebApplication1.My.MyWebExtension.Response">
-	<summary>
- Devuelve un objeto Response.
- </summary>
-</member><member name="P:WebApplication1.My.MyWebExtension.Log">
-	<summary>
- Devuelve el objeto de registro Asp.
- </summary>
-</member><member name="T:WebApplication1.My.MyWebExtension">
-	<summary>
- Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
- </summary>
-	<remarks></remarks>
 </member>
 </members>
 </doc>
