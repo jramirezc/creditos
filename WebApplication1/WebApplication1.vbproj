@@ -126,7 +126,8 @@
     <Content Include="vistas\credito\crear.aspx" />
     <Content Include="vistas\credito\index.aspx" />
     <Content Include="vistas\credito\ver.aspx" />
-    <Content Include="vistas\pruebas\prueba.aspx" />
+    <Content Include="vistas\parametrizar\index.aspx" />
+    <Content Include="vistas\parametrizar\ver.aspx" />
     <Content Include="vistas\user\login.aspx" />
     <Content Include="Web.config" />
     <Content Include="old\WebForm1.aspx" />
@@ -241,12 +242,19 @@
       <DependentUpon>ver.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="vistas\pruebas\objDataTable.vb" />
-    <Compile Include="vistas\pruebas\prueba.aspx.designer.vb">
-      <DependentUpon>prueba.aspx</DependentUpon>
+    <Compile Include="vistas\parametrizar\objDataTable.vb" />
+    <Compile Include="vistas\parametrizar\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="vistas\pruebas\prueba.aspx.vb">
-      <DependentUpon>prueba.aspx</DependentUpon>
+    <Compile Include="vistas\parametrizar\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\parametrizar\ver.aspx.designer.vb">
+      <DependentUpon>ver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\parametrizar\ver.aspx.vb">
+      <DependentUpon>ver.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="vistas\user\login.aspx.designer.vb">
