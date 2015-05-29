@@ -83,7 +83,7 @@
         <a href="http://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="\credito/">Creditos</a></li>
-          <li><a href="javascript:void(0)">Another action</a></li>
+          <li><a href="\parametrizar/">parametrizar</a></li>
           <li><a href="javascript:void(0)">Something else here</a></li>
           <li class="divider"></li>
           <li class="dropdown-header">Dropdown header</li>
@@ -151,8 +151,8 @@
                 <asp:ContentPlaceHolder id="letras" runat="server"></asp:ContentPlaceHolder>
                <!-- Contenedor de las Vistas de persona-->
                 <asp:ContentPlaceHolder id="presona" runat="server"></asp:ContentPlaceHolder>
-               <!-- Contenedor de Evaluación Domiciliar-->
-                <asp:ContentPlaceHolder id="evaluaciondomiciliar" runat="server"></asp:ContentPlaceHolder>
+               <!-- Contenedor de las Vistas de vistas de Usuario-->
+                <asp:ContentPlaceHolder id="crudusuario" runat="server"></asp:ContentPlaceHolder>
            </div>
         </div>
 </div>
