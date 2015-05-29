@@ -10,8 +10,6 @@ Public Class prueba
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         procMostrarTodo("Sexo")
         Label1.Text = "Sexo"
-        GridView1.DataSource = MostrarTodo
-        GridView1.DataBind()
 
     End Sub
     Sub escribir(ByVal tabla As SqlString)

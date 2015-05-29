@@ -126,7 +126,7 @@
     <Content Include="vistas\credito\crear.aspx" />
     <Content Include="vistas\credito\index.aspx" />
     <Content Include="vistas\credito\ver.aspx" />
-    <Content Include="vistas\parametrizacion\index.aspx" />
+    <Content Include="vistas\pruebas\prueba.aspx" />
     <Content Include="vistas\user\login.aspx" />
     <Content Include="Web.config" />
     <Content Include="old\WebForm1.aspx" />
@@ -144,9 +144,11 @@
     </Compile>
     <Compile Include="default.aspx.vb">
       <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="layout.master.vb">
       <DependentUpon>layout.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -172,74 +174,87 @@
     </Compile>
     <Compile Include="old\Site1.Master.vb">
       <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="old\users\login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="old\users\login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="old\users\form.aspx.designer.vb">
       <DependentUpon>form.aspx</DependentUpon>
     </Compile>
     <Compile Include="old\users\form.aspx.vb">
       <DependentUpon>form.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="old\WebForm1.aspx.designer.vb">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="old\WebForm1.aspx.vb">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="old\WebForm2.aspx.designer.vb">
       <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="old\WebForm2.aspx.vb">
       <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="old\index.aspx.designer.vb">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="old\index.aspx.vb">
       <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="old\WebForm4.aspx.designer.vb">
       <DependentUpon>WebForm4.aspx</DependentUpon>
     </Compile>
     <Compile Include="old\WebForm4.aspx.vb">
       <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="old\WebForm5.aspx.designer.vb">
       <DependentUpon>WebForm5.aspx</DependentUpon>
     </Compile>
     <Compile Include="old\WebForm5.aspx.vb">
       <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="vistas\credito\buscar.aspx.vb">
       <DependentUpon>buscar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="vistas\credito\crear.aspx.vb">
       <DependentUpon>crear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="vistas\credito\index.aspx.vb">
       <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="vistas\credito\ver.aspx.vb">
       <DependentUpon>ver.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="vistas\parametrizacion\objDataTable.vb" />
-    <Compile Include="vistas\parametrizacion\index.aspx.designer.vb">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="vistas\parametrizacion\index.aspx.vb">
-      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\pruebas\objDataTable.vb" />
+    <Compile Include="vistas\pruebas\prueba.aspx.designer.vb">
+      <DependentUpon>prueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\pruebas\prueba.aspx.vb">
+      <DependentUpon>prueba.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="vistas\user\login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="vistas\user\login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

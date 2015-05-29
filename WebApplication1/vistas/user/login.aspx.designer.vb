@@ -11,16 +11,25 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class prueba
+Partial Public Class login
 
     '''<summary>
-    '''Control Label1.
+    '''Control inputEmail.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents inputEmail As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control inputPassword.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents inputPassword As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control GridView1.
@@ -32,29 +41,20 @@ Partial Public Class prueba
     Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''Control Button1.
+    '''Control validalogin.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents validalogin As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''Control SqlDataSource1.
+    '''Control login.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''Control LinkButton2.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents LinkButton2 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents login As Global.System.Web.UI.WebControls.LinkButton
 End Class

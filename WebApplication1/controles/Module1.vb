@@ -16,7 +16,6 @@ Module Module1
         Try
             If cnn.State = 1 Then
                 cnn.Close()
-
             End If
             cnn.Open()
             'MsgBox("entro")

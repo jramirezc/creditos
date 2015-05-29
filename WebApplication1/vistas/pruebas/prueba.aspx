@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/layout.master" CodeBehind="index.aspx.vb" Inherits="WebApplication1.prueba" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/layout.master" CodeBehind="prueba.aspx.vb" Inherits="WebApplication1.prueba" %>
 
 <%@ Import Namespace="System.Data" %>
 <%@Import Namespace=" System.Web.UI.Page"%>
@@ -8,11 +8,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="usuario" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- 
+ <asp:GridView ID="GridView1" runat="server"></asp:GridView>
     <asp:Label ID="Label1" runat="server" Text="Rol"></asp:Label>  
 <div class="row">
-    <div class="col-sm-1">
-        <asp:GridView ID="GridView1" runat="server" CssClass="table" ></asp:GridView>
+    <div class="col-sm-5">
         <table class="table table-condensed">
             <tr>
               <th>id</th>
@@ -27,7 +26,6 @@
     <asp:Button ID="Button1" runat="server" Text="Button" />
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:tonyBD %>" SelectCommand="procRolMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
     <asp:LinkButton ID="LinkButton2" runat="server">LinkButton</asp:LinkButton>
-    </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="parametrizacion" runat="server">
 </asp:Content>
