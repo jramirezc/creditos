@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <title>Formulario Credito</title>
     </asp:Content>
-
 <asp:Content ID="Content5" ContentPlaceHolderID="credito" Runat="Server">
     
         <div class="row">
