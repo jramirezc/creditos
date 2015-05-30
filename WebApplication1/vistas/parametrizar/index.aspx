@@ -22,6 +22,10 @@
             <%escribir(Label1.Text.ToString)%>
         </table>
     </div>
+    <div class="col-sm-1 ">
+          <%btncrear(Label1.Text.ToString)%>
+           
+        </div>
 </div>
     
 

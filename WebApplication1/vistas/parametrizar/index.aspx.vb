@@ -27,6 +27,10 @@ Public Class prueba
 
         Next
     End Sub
+    Sub btncrear(ByVal tabla As SqlString)
+        Response.Write("<a type='button' href='\parametrizar/crear/" & tabla.ToString & "' class='btn btn-fab btn-raised  btn-material-green-600 'data-toggle='tooltip' data-placement='bottom' title='' data-original-title='Tooltip on bottom'><i class='fa fa-plus-circle'></i></a>")
+        '<a type="button" href="\parametrizar/crear" class="btn btn-fab btn-raised  btn-material-green-600 "data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom"><i class="fa fa-plus-circle"></i></a>
+    End Sub
 
     Protected Sub LinkButton2_Click(sender As Object, e As EventArgs) Handles LinkButton2.Click
         ' procMostrarTodo(LinkButton2.Text.ToString)

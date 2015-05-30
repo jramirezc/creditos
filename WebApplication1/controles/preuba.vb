@@ -72,21 +72,21 @@ Module preuba
         conectarce()
 
     End Sub
-    Public Sub procCrear(ByVal tabla As String, ByVal id As SqlString, ByVal nom As SqlString, ByVal estado As SqlString) '(ByVal Id As SqlString, ByVal Nom As SqlString)
+    Public Sub procCrear(ByVal tabla As String, ByVal nom As SqlString) '(ByVal Id As SqlString, ByVal Nom As SqlString)
         Buscar = New DataTable
         Dim comandoIG As New SqlCommand()
-        Dim paramId As New SqlParameter("@ID", SqlDbType.Int)
-        Dim paramEst As New SqlParameter("@EST", SqlDbType.Int)
+        '   Dim paramId As New SqlParameter("@ID", SqlDbType.Int)
+        '    Dim paramEst As New SqlParameter("@EST", SqlDbType.Int)
         Dim paramNom As New SqlParameter("@NOM", SqlDbType.NVarChar)
-        paramId.Value = CInt(id)
+        '   paramId.Value = CInt(id)
         paramNom.Value = nom
-        paramEst.Value = CInt(estado)
+        '    paramEst.Value = CInt(estado)
         ' paramNom.Value = Nom
-        comandoIG.Parameters.Add(paramId)
+        '     comandoIG.Parameters.Add(paramId)
         comandoIG.Parameters.Add(paramNom)
-        comandoIG.Parameters.Add(paramEst)
+        '  comandoIG.Parameters.Add(paramEst)
 
-        comandoIG.CommandText = "proc" & tabla & "Actualizar @ID, @NOM, @EST"
+        comandoIG.CommandText = "proc" & tabla & "Crear  @NOM"
         conectarce()
         comandoIG.Connection = cnn
         comandoIG.ExecuteNonQuery()
