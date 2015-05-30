@@ -30,3 +30,12 @@ F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplic
 F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplication1.dll
 F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplication1.xml
 F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\PC-JUAN\Documents\GitHub\creditos\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\PC-JUAN\Documents\GitHub\creditos\WebApplication1\bin\WebApplication1.dll
+C:\Users\PC-JUAN\Documents\GitHub\creditos\WebApplication1\bin\WebApplication1.pdb
+C:\Users\PC-JUAN\Documents\GitHub\creditos\WebApplication1\bin\WebApplication1.xml
+C:\Users\PC-JUAN\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.Resources.resources
+C:\Users\PC-JUAN\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
+C:\Users\PC-JUAN\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\PC-JUAN\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.xml
+C:\Users\PC-JUAN\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.pdb
