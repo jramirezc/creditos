@@ -19,6 +19,7 @@
         routes.MapPageRoute("", _
     "credito", _
     "~/vistas/credito/index.aspx")
+        
         routes.MapPageRoute("", _
     "credito/crear", _
     "~/vistas/credito/crear.aspx")
@@ -39,6 +40,22 @@
         routes.MapPageRoute("", _
     "tipoDocumento/crear", _
     "~/vistas/tipoDocumento/Crear.aspx")
+        
+        'Ruta tabla usuario crear
+        routes.MapPageRoute("", _
+    "usuario/crear", _
+    "~/vistas/usuario/crear.aspx")
+
+        'Ruta tabla usuario ver
+        routes.MapPageRoute("", _
+    "usuario/ver/{id}", _
+    "~/vistas/usuario/verr.aspx")
+        
+        'Ruta tabla usuario index
+        routes.MapPageRoute("", _
+ "usuario", _
+ "~/vistas/usuario/inde.aspx")
+        
         
     End Sub
     Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)

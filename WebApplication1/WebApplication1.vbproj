@@ -129,6 +129,8 @@
     <Content Include="vistas\pruebas\prueba.aspx" />
     <Content Include="vistas\user\login.aspx" />
     <Content Include="vistas\usuario\crear.aspx" />
+    <Content Include="vistas\usuario\inde.aspx" />
+    <Content Include="vistas\usuario\verr.aspx" />
     <Content Include="Web.config" />
     <Content Include="old\WebForm1.aspx" />
     <Content Include="old\WebForm2.aspx" />
@@ -262,6 +264,20 @@
     </Compile>
     <Compile Include="vistas\usuario\crear.aspx.vb">
       <DependentUpon>crear.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\usuario\inde.aspx.designer.vb">
+      <DependentUpon>inde.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\usuario\inde.aspx.vb">
+      <DependentUpon>inde.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\usuario\verr.aspx.designer.vb">
+      <DependentUpon>verr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\usuario\verr.aspx.vb">
+      <DependentUpon>verr.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
