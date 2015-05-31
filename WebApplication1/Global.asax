@@ -39,6 +39,15 @@
         routes.MapPageRoute("", _
     "tipoDocumento/crear", _
     "~/vistas/tipoDocumento/Crear.aspx")
+        'Rutas de  Tabla Evaluacion Domiciliar
+        routes.MapPageRoute("", _
+   "evaluaciondomiciliar", _
+   "~/vistas/evaluaciondomiciliar/index.aspx")
+        'Rutas de  Tabla Crear Evaluacion Domiciliar
+        routes.MapPageRoute("", _
+   "evaluaciondomiciliar/crear", _
+   "~/vistas/evaluaciondomiciliar/crear.aspx")
+
         
     End Sub
     Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)

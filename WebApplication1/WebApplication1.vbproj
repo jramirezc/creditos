@@ -126,6 +126,8 @@
     <Content Include="vistas\credito\crear.aspx" />
     <Content Include="vistas\credito\index.aspx" />
     <Content Include="vistas\credito\ver.aspx" />
+    <Content Include="vistas\evaluaciondomiciliar\crear.aspx" />
+    <Content Include="vistas\evaluaciondomiciliar\index.aspx" />
     <Content Include="vistas\pruebas\prueba.aspx" />
     <Content Include="vistas\user\login.aspx" />
     <Content Include="Web.config" />
@@ -240,6 +242,20 @@
     <Compile Include="vistas\credito\ver.aspx.vb">
       <DependentUpon>ver.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\evaluaciondomiciliar\crear.aspx.designer.vb">
+      <DependentUpon>crear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\evaluaciondomiciliar\crear.aspx.vb">
+      <DependentUpon>crear.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\evaluaciondomiciliar\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\evaluaciondomiciliar\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="vistas\pruebas\objDataTable.vb" />
     <Compile Include="vistas\pruebas\prueba.aspx.designer.vb">

@@ -151,6 +151,9 @@
                 <asp:ContentPlaceHolder id="letras" runat="server"></asp:ContentPlaceHolder>
                <!-- Contenedor de las Vistas de persona-->
                 <asp:ContentPlaceHolder id="presona" runat="server"></asp:ContentPlaceHolder>
+               <!-- Contenedor de las Vistas de CrudEvaluacionDomiciliar-->
+                <asp:ContentPlaceHolder id="CrudEvaluacionDomiciliar" runat="server"></asp:ContentPlaceHolder>
+
            </div>
         </div>
 </div>
