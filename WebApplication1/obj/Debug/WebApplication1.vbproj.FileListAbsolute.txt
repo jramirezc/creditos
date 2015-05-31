@@ -22,6 +22,7 @@ F:\Documentos tony\GitHub\credito\credito\WebApplication1\obj\Debug\WebApplicati
 F:\Documentos tony\GitHub\credito\credito\WebApplication1\bin\WebApplication1.dll
 F:\Documentos tony\GitHub\credito\credito\WebApplication1\bin\WebApplication1.pdb
 F:\Documentos tony\GitHub\credito\credito\WebApplication1\bin\WebApplication1.xml
+<<<<<<< HEAD
 C:\Users\Usuario\Documents\GitHub\creditos\WebApplication1\bin\WebApplication1.dll.config
 C:\Users\Usuario\Documents\GitHub\creditos\WebApplication1\bin\WebApplication1.dll
 C:\Users\Usuario\Documents\GitHub\creditos\WebApplication1\bin\WebApplication1.pdb
@@ -31,3 +32,13 @@ C:\Users\Usuario\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplicat
 C:\Users\Usuario\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Usuario\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.xml
 C:\Users\Usuario\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.pdb
+=======
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\bin\WebApplication1.dll
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\bin\WebApplication1.pdb
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\bin\WebApplication1.xml
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplication1.Resources.resources
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplication1.dll
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplication1.xml
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplication1.pdb
+>>>>>>> origin/master

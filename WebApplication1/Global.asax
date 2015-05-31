@@ -28,6 +28,16 @@
         routes.MapPageRoute("", _
            "credito/ver/{id}", _
            "~/vistas/credito/ver.aspx")
+        '================rutas de parametrizacion==================================================
+        routes.MapPageRoute("", _
+    "parametrizar", _
+    "~/vistas/parametrizar/index.aspx")
+        routes.MapPageRoute("", _
+  "parametrizar/{accion}/{tabla}", _
+  "~/vistas/parametrizar/ver.aspx")
+        routes.MapPageRoute("", _
+    "parametrizar/{accion}/{tabla}/{id}", _
+    "~/vistas/parametrizar/ver.aspx")
         ' letras de pago rutas
         routes.MapPageRoute("", _
     "letras/{id}", _

@@ -6,23 +6,39 @@ WebApplication1
 </name>
 </assembly>
 <members>
+<<<<<<< HEAD
 <member name="F:WebApplication1.Site1.head">
 	<summary>
 Control head.
+=======
+<member name="F:WebApplication1.WebForm3.TextBox2">
+	<summary>
+Control TextBox2.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.Site1.form1">
 	<summary>
 Control form1.
+=======
+</member><member name="F:WebApplication1.WebForm3.TextBox1">
+	<summary>
+Control TextBox1.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.Site1.Button2">
+=======
+</member><member name="F:WebApplication1.WebForm3.Button1">
+>>>>>>> origin/master
 	<summary>
 Control Button2.
 </summary>
@@ -30,111 +46,218 @@ Control Button2.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.Site1.Label3">
 	<summary>
 Control Label3.
+=======
+</member><member name="F:WebApplication1.prueba.GridView1">
+	<summary>
+Control GridView1.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.Site1.ContentPlaceHolder1">
 	<summary>
 Control ContentPlaceHolder1.
+=======
+</member><member name="F:WebApplication1.prueba.Label1">
+	<summary>
+Control Label1.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.crear.idCredito">
 	<summary>
 Control idCredito.
+=======
+</member><member name="F:WebApplication1.prueba.SqlDataSource1">
+	<summary>
+Control SqlDataSource1.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.crear.idCampo">
 	<summary>
 Control idCampo.
+=======
+</member><member name="F:WebApplication1.prueba.LinkButton2">
+	<summary>
+Control LinkButton2.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.crear.DropDownList1">
 	<summary>
 Control DropDownList1.
+=======
+</member><member name="F:WebApplication1.prueba.LinkButton3">
+	<summary>
+Control LinkButton3.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.crear.SqlDataSource2">
 	<summary>
 Control SqlDataSource2.
+=======
+</member><member name="F:WebApplication1.prueba.LinkButton4">
+	<summary>
+Control LinkButton4.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.crear.SqlDataSource1">
 	<summary>
 Control SqlDataSource1.
+=======
+</member><member name="F:WebApplication1.prueba.LinkButton5">
+	<summary>
+Control LinkButton5.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.crear.luz">
 	<summary>
 Control luz.
+=======
+</member><member name="F:WebApplication1.prueba.LinkButton6">
+	<summary>
+Control LinkButton6.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.crear.SerBasura">
 	<summary>
 Control SerBasura.
+=======
+</member><member name="F:WebApplication1.prueba.LinkButton7">
+	<summary>
+Control LinkButton7.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.crear.SerCable">
 	<summary>
 Control SerCable.
+=======
+</member><member name="F:WebApplication1.prueba.LinkButton8">
+	<summary>
+Control LinkButton8.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.crear.Area">
 	<summary>
 Control Area.
+=======
+</member><member name="F:WebApplication1.WebForm2.form1">
+	<summary>
+Control form1.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.WebForm1.form1">
 	<summary>
 Control form1.
+=======
+</member><member name="F:WebApplication1.WebForm2.Button2">
+	<summary>
+Control Button2.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.WebForm1.GridView1">
 	<summary>
 Control GridView1.
+=======
+</member><member name="F:WebApplication1.WebForm2.Label1">
+	<summary>
+Control Label1.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.WebForm1.GridView2">
+=======
+</member><member name="P:WebApplication1.My.MyWebExtension.Computer">
+	<summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member><member name="P:WebApplication1.My.MyWebExtension.User">
+	<summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member><member name="P:WebApplication1.My.MyWebExtension.Request">
+	<summary>
+ Devuelve un objeto Request.
+ </summary>
+</member><member name="P:WebApplication1.My.MyWebExtension.Response">
+	<summary>
+ Devuelve un objeto Response.
+ </summary>
+</member><member name="P:WebApplication1.My.MyWebExtension.Log">
+	<summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member><member name="T:WebApplication1.My.MyWebExtension">
+	<summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:WebApplication1.Site1.head">
+>>>>>>> origin/master
 	<summary>
 Control GridView2.
 </summary>
@@ -174,38 +297,63 @@ Control Button2.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.WebForm1.SqlDataSource2">
 	<summary>
 Control SqlDataSource2.
+=======
+</member><member name="F:WebApplication1.ver.Label1">
+	<summary>
+Control Label1.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.WebForm6.text1">
 	<summary>
 Control text1.
+=======
+</member><member name="F:WebApplication1.ver.TextBox1">
+	<summary>
+Control TextBox1.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.WebForm6.text2">
 	<summary>
 Control text2.
+=======
+</member><member name="F:WebApplication1.ver.estado">
+	<summary>
+Control estado.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.WebForm6.Button11">
 	<summary>
 Control Button11.
+=======
+</member><member name="F:WebApplication1.ver.LinkButton1">
+	<summary>
+Control LinkButton1.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="P:WebApplication1.My.MyWebExtension.Computer">
 	<summary>
  Devuelve información sobre el equipo host.
@@ -234,6 +382,11 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:WebApplication1.WebForm3.TextBox2">
 	<summary>
 Control TextBox2.
+=======
+</member><member name="F:WebApplication1.ver.LinkButton2">
+	<summary>
+Control LinkButton2.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -303,73 +456,135 @@ Control inputEmail.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.login.inputPassword">
 	<summary>
 Control inputPassword.
+=======
+</member><member name="F:WebApplication1.login.inputEmail">
+	<summary>
+Control inputEmail.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.login.GridView1">
 	<summary>
 Control GridView1.
+=======
+</member><member name="F:WebApplication1.login.inputPassword">
+	<summary>
+Control inputPassword.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.login.validalogin">
 	<summary>
 Control validalogin.
+=======
+</member><member name="F:WebApplication1.login.GridView1">
+	<summary>
+Control GridView1.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.login.login">
 	<summary>
 Control login.
+=======
+</member><member name="F:WebApplication1.login.validalogin">
+	<summary>
+Control validalogin.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.WebForm4.Label2">
 	<summary>
 Control Label2.
+=======
+</member><member name="F:WebApplication1.login.login">
+	<summary>
+Control login.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.WebForm4.Button3">
 	<summary>
 Control Button3.
+=======
+</member><member name="F:WebApplication1.WebForm6.text1">
+	<summary>
+Control text1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member><member name="F:WebApplication1.WebForm6.text2">
+	<summary>
+Control text2.
+>>>>>>> origin/master
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.WebForm2.form1">
 	<summary>
 Control form1.
+=======
+</member><member name="F:WebApplication1.WebForm6.Button11">
+	<summary>
+Control Button11.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.WebForm2.Button2">
 	<summary>
 Control Button2.
+=======
+</member><member name="F:WebApplication1.WebForm4.Label2">
+	<summary>
+Control Label2.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:WebApplication1.WebForm2.Label1">
 	<summary>
 Control Label1.
+=======
+</member><member name="F:WebApplication1.WebForm4.Button3">
+	<summary>
+Control Button3.
+>>>>>>> origin/master
 </summary>
 	<remarks>
 Campo generado automáticamente.
