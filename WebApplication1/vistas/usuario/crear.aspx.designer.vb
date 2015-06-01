@@ -11,25 +11,52 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class prueba
+Partial Public Class crear
 
     '''<summary>
-    '''Control GridView1.
+    '''Control nomusuario.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents nomusuario As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control Label1.
+    '''Control passusuario.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents passusuario As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control cuipersona.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents cuipersona As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control DataSourceMostrarPersona.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents DataSourceMostrarPersona As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Control idrol.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents idrol As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Control SqlDataSource1.
@@ -41,65 +68,38 @@ Partial Public Class prueba
     Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''Control LinkButton2.
+    '''Control linkBGuardar.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton2 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents linkBGuardar As Global.System.Web.UI.WebControls.LinkButton
 
     '''<summary>
-    '''Control LinkButton3.
+    '''Control DataList1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton3 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents DataList1 As Global.System.Web.UI.WebControls.DataList
 
     '''<summary>
-    '''Control LinkButton4.
+    '''Control SqlDataSource3.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton4 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents SqlDataSource3 As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''Control LinkButton5.
+    '''Control SqlDataSource2.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton5 As Global.System.Web.UI.WebControls.LinkButton
-
-    '''<summary>
-    '''Control LinkButton6.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents LinkButton6 As Global.System.Web.UI.WebControls.LinkButton
-
-    '''<summary>
-    '''Control LinkButton7.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents LinkButton7 As Global.System.Web.UI.WebControls.LinkButton
-
-    '''<summary>
-    '''Control LinkButton8.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents LinkButton8 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents SqlDataSource2 As Global.System.Web.UI.WebControls.SqlDataSource
 End Class
