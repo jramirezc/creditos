@@ -84,6 +84,7 @@
         <ul class="dropdown-menu">
           <li><a href="\credito/">Creditos</a></li>
           <li><a href="\parametrizar/">parametrizar</a></li>
+          <li><a href="\usuario/">Usuario</a></li>
           <li><a href="javascript:void(0)">Something else here</a></li>
           <li class="divider"></li>
           <li class="dropdown-header">Dropdown header</li>
