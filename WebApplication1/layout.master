@@ -154,6 +154,8 @@
                 <asp:ContentPlaceHolder id="presona" runat="server"></asp:ContentPlaceHolder>
                <!-- Contenedor de las Vistas de vistas de Usuario-->
                 <asp:ContentPlaceHolder id="crudusuario" runat="server"></asp:ContentPlaceHolder>
+               <!-- Contenedor de las Vistas de vistas evaluacion domiciliar-->
+                <asp:ContentPlaceHolder id="Crudevaluaciondomiciliar" runat="server"></asp:ContentPlaceHolder>
            </div>
         </div>
 </div>

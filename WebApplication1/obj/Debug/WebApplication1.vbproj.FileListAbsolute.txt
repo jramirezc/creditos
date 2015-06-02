@@ -46,3 +46,11 @@ D:\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.vbproj.Ge
 D:\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.dll
 D:\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.xml
 D:\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\Documents\GitHub\juan.2\WebApplication1\bin\WebApplication1.dll
+D:\Documents\GitHub\juan.2\WebApplication1\bin\WebApplication1.pdb
+D:\Documents\GitHub\juan.2\WebApplication1\bin\WebApplication1.xml
+D:\Documents\GitHub\juan.2\WebApplication1\obj\Debug\WebApplication1.Resources.resources
+D:\Documents\GitHub\juan.2\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
+D:\Documents\GitHub\juan.2\WebApplication1\obj\Debug\WebApplication1.dll
+D:\Documents\GitHub\juan.2\WebApplication1\obj\Debug\WebApplication1.xml
+D:\Documents\GitHub\juan.2\WebApplication1\obj\Debug\WebApplication1.pdb
