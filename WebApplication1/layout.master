@@ -157,6 +157,8 @@
                 <asp:ContentPlaceHolder id="crudevaluacionfinanciera" runat="server"></asp:ContentPlaceHolder>
                <!-- Contenedor de las Vistas de Persona-->
                 <asp:ContentPlaceHolder id="crudpersona" runat="server"></asp:ContentPlaceHolder>
+                <!-- Contenedor de las Vistas Evaluacion Domiciliar-->
+                <asp:ContentPlaceHolder id="Crudevaluaciondomiciliar" runat="server"></asp:ContentPlaceHolder>
            </div>
         </div>
 </div>

@@ -15,9 +15,9 @@
                      <div class="panel-body">
                             <div class="form-group">
                              
-                                
+                                              
 
-                                <asp:detailsview ID="DetailsViewver" runat="server" CssClass="table" height="50px" width="125px" DataSourceID="DataSourceVerUsuario" AutoGenerateRows="False" DataKeyNames="idUsuario">
+                  <asp:detailsview ID="DetailsViewver" runat="server" CssClass="table" height="50px" width="125px" DataSourceID="DataSourceVerUsuario" AutoGenerateRows="False" DataKeyNames="idUsuario">
                                     <Fields>
                                         <asp:BoundField DataField="idUsuario" HeaderText="idUsuario" InsertVisible="False" ReadOnly="True" SortExpression="idUsuario" />
                                         <asp:BoundField DataField="nomUsuario" HeaderText="nomUsuario" SortExpression="nomUsuario" />

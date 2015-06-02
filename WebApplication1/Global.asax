@@ -55,7 +55,14 @@
         routes.MapPageRoute("", _
  "usuario", _
  "~/vistas/usuario/inde.aspx")
-        
+        'Ruta tabla usuario index
+        routes.MapPageRoute("", _
+ "evaluaciondomiciliar", _
+ "~/vistas/evaluaciondomiciliar/index.aspx")
+        'Ruta tabla evaluacion domiciliar crear
+        routes.MapPageRoute("", _
+ "evaluaciondomiciliar/crear", _
+ "~/vistas/evaluaciondomiciliar/crear.aspx")
         
     End Sub
     Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)

@@ -6,7 +6,31 @@ WebApplication1
 </name>
 </assembly>
 <members>
-<member name="F:WebApplication1.WebForm3.TextBox2">
+<member name="F:WebApplication1.crear1.nomusuario">
+	<summary>
+Control nomusuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.index1.GridViewmostrar">
+	<summary>
+Control GridViewmostrar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.index1.DataSourcemostrasevaluacionfinanciera">
+	<summary>
+Control DataSourcemostrasevaluacionfinanciera.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm3.TextBox2">
 	<summary>
 Control TextBox2.
 </summary>
