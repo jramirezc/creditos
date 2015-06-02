@@ -21,7 +21,12 @@
         For Each objRow In Buscar.Rows
 
             TextBox1.Text = objRow.Item("nom" & Page.RouteData.Values("tabla").ToString)
-            Label1.Text = Page.RouteData.Values("accion").ToString & ": " & Page.RouteData.Values("tabla").ToString & " #" & Page.RouteData.Values("id").ToString
+            If (String.Equals(Page.RouteData.Values("accion").ToString, "crear")) Then
+                Label1.Text = Page.RouteData.Values("accion").ToString & ": " & Page.RouteData.Values("tabla").ToString
+            Else
+                Label1.Text = Page.RouteData.Values("accion").ToString & ": " & Page.RouteData.Values("tabla").ToString & " #" & Page.RouteData.Values("id").ToString
+
+            End If
             If (String.Equals(Page.RouteData.Values("accion").ToString, "ver")) Then
                 TextBox1.ReadOnly = True
             End If
