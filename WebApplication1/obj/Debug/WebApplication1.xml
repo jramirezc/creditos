@@ -6,7 +6,175 @@ WebApplication1
 </name>
 </assembly>
 <members>
-<member name="F:WebApplication1.ver.Label1">
+<member name="F:WebApplication1.index1.GridViewmostrar">
+	<summary>
+Control GridViewmostrar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.index1.DataSourcemostrasevaluacionfinanciera">
+	<summary>
+Control DataSourcemostrasevaluacionfinanciera.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.idcredito">
+	<summary>
+Control idcredito.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.DataSourceevaluaciondomiciliar">
+	<summary>
+Control DataSourceevaluaciondomiciliar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.ubicacion">
+	<summary>
+Control ubicacion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.DataSourcecampo">
+	<summary>
+Control DataSourcecampo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.DataSourceidcampo">
+	<summary>
+Control DataSourceidcampo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.DropDownservicioagua">
+	<summary>
+Control DropDownservicioagua.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.DataSourcedecision">
+	<summary>
+Control DataSourcedecision.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.DropDownservicioluz">
+	<summary>
+Control DropDownservicioluz.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.DataSourcedecision1">
+	<summary>
+Control DataSourcedecision1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.DropDownserviciobasura">
+	<summary>
+Control DropDownserviciobasura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.DataSourcebasura">
+	<summary>
+Control DataSourcebasura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.DropDowncable">
+	<summary>
+Control DropDowncable.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.DataSourceservcable">
+	<summary>
+Control DataSourceservcable.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.area">
+	<summary>
+Control area.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.linkBGuardar">
+	<summary>
+Control linkBGuardar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.DataSourceguaevadom">
+	<summary>
+Control DataSourceguaevadom.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear1.DetailsView1">
+	<summary>
+Control DetailsView1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm2.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm2.Button2">
+	<summary>
+Control Button2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm2.Label1">
 	<summary>
 Control Label1.
 </summary>
@@ -14,25 +182,170 @@ Control Label1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.ver.TextBox1">
+</member><member name="F:WebApplication1.WebForm6.text1">
 	<summary>
-Control TextBox1.
+Control text1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.ver.estado">
+</member><member name="F:WebApplication1.WebForm6.text2">
 	<summary>
-Control estado.
+Control text2.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.ver.LinkButton1">
+</member><member name="F:WebApplication1.WebForm6.Button11">
 	<summary>
-Control LinkButton1.
+Control Button11.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm1.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm1.GridView1">
+	<summary>
+Control GridView1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm1.GridView2">
+	<summary>
+Control GridView2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm1.Label1">
+	<summary>
+Control Label1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm1.Button1">
+	<summary>
+Control Button1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm1.SqlDataSource1">
+	<summary>
+Control SqlDataSource1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm1.Button2">
+	<summary>
+Control Button2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.WebForm1.SqlDataSource2">
+	<summary>
+Control SqlDataSource2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="P:WebApplication1.My.MyWebExtension.Computer">
+	<summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member><member name="P:WebApplication1.My.MyWebExtension.User">
+	<summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member><member name="P:WebApplication1.My.MyWebExtension.Request">
+	<summary>
+ Devuelve un objeto Request.
+ </summary>
+</member><member name="P:WebApplication1.My.MyWebExtension.Response">
+	<summary>
+ Devuelve un objeto Response.
+ </summary>
+</member><member name="P:WebApplication1.My.MyWebExtension.Log">
+	<summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member><member name="T:WebApplication1.My.MyWebExtension">
+	<summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:WebApplication1.index.GridView1">
+	<summary>
+Control GridView1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.index.SqlDataSourceVerUsuario">
+	<summary>
+Control SqlDataSourceVerUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.Site1.head">
+	<summary>
+Control head.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.Site1.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.Site1.Button2">
+	<summary>
+Control Button2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.Site1.Label3">
+	<summary>
+Control Label3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.Site1.ContentPlaceHolder1">
+	<summary>
+Control ContentPlaceHolder1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -110,6 +423,14 @@ Control LinkButton7.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member><member name="F:WebApplication1.prueba.LinkButton8">
+	<summary>
+Control LinkButton8.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
 </member><member name="F:WebApplication1.WebForm3.TextBox2">
 	<summary>
 Control TextBox2.
@@ -134,136 +455,79 @@ Control Button1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm2.form1">
+</member><member name="F:WebApplication1.WebForm4.Label2">
 	<summary>
-Control form1.
+Control Label2.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm2.Button2">
+</member><member name="F:WebApplication1.WebForm4.Button3">
 	<summary>
-Control Button2.
+Control Button3.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm2.Label1">
+</member><member name="F:WebApplication1.verr.DetailsViewver">
 	<summary>
-Control Label1.
+Control DetailsViewver.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="P:WebApplication1.My.MyWebExtension.Computer">
+</member><member name="F:WebApplication1.verr.DataSourceVerUsuario">
 	<summary>
- Devuelve información sobre el equipo host.
- </summary>
-</member><member name="P:WebApplication1.My.MyWebExtension.User">
-	<summary>
- Devuelve información del usuario web actual.
- </summary>
-</member><member name="P:WebApplication1.My.MyWebExtension.Request">
-	<summary>
- Devuelve un objeto Request.
- </summary>
-</member><member name="P:WebApplication1.My.MyWebExtension.Response">
-	<summary>
- Devuelve un objeto Response.
- </summary>
-</member><member name="P:WebApplication1.My.MyWebExtension.Log">
-	<summary>
- Devuelve el objeto de registro Asp.
- </summary>
-</member><member name="T:WebApplication1.My.MyWebExtension">
-	<summary>
- Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
- </summary>
-	<remarks></remarks>
-</member><member name="F:WebApplication1.Site1.head">
-	<summary>
-Control head.
+Control DataSourceVerUsuario.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.Site1.form1">
+</member><member name="F:WebApplication1.crear.nomusuario">
 	<summary>
-Control form1.
+Control nomusuario.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.Site1.Button2">
+</member><member name="F:WebApplication1.crear.passusuario">
 	<summary>
-Control Button2.
+Control passusuario.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.Site1.Label3">
+</member><member name="F:WebApplication1.crear.cuipersona">
 	<summary>
-Control Label3.
+Control cuipersona.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.Site1.ContentPlaceHolder1">
+</member><member name="F:WebApplication1.crear.DataSourceMostrarPersona">
 	<summary>
-Control ContentPlaceHolder1.
+Control DataSourceMostrarPersona.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm1.form1">
+</member><member name="F:WebApplication1.crear.idrol">
 	<summary>
-Control form1.
+Control idrol.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm1.GridView1">
-	<summary>
-Control GridView1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.WebForm1.GridView2">
-	<summary>
-Control GridView2.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.WebForm1.Label1">
-	<summary>
-Control Label1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.WebForm1.Button1">
-	<summary>
-Control Button1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.WebForm1.SqlDataSource1">
+</member><member name="F:WebApplication1.crear.SqlDataSource1">
 	<summary>
 Control SqlDataSource1.
 </summary>
@@ -271,15 +535,31 @@ Control SqlDataSource1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm1.Button2">
+</member><member name="F:WebApplication1.crear.linkBGuardar">
 	<summary>
-Control Button2.
+Control linkBGuardar.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm1.SqlDataSource2">
+</member><member name="F:WebApplication1.crear.DataList1">
+	<summary>
+Control DataList1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear.SqlDataSource3">
+	<summary>
+Control SqlDataSource3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.crear.SqlDataSource2">
 	<summary>
 Control SqlDataSource2.
 </summary>
@@ -327,41 +607,41 @@ Control login.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm6.text1">
+</member><member name="F:WebApplication1.ver.Label1">
 	<summary>
-Control text1.
+Control Label1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm6.text2">
+</member><member name="F:WebApplication1.ver.TextBox1">
 	<summary>
-Control text2.
+Control TextBox1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm6.Button11">
+</member><member name="F:WebApplication1.ver.estado">
 	<summary>
-Control Button11.
+Control estado.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm4.Label2">
+</member><member name="F:WebApplication1.ver.LinkButton1">
 	<summary>
-Control Label2.
+Control LinkButton1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.WebForm4.Button3">
+</member><member name="F:WebApplication1.ver.LinkButton2">
 	<summary>
-Control Button3.
+Control LinkButton2.
 </summary>
 	<remarks>
 Campo generado automáticamente.

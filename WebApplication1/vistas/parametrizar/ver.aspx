@@ -24,6 +24,12 @@
 
 
             <%End If
+                If (String.Equals(Page.RouteData.Values("accion").ToString, "crear")) Then
+                    %>
+                <asp:LinkButton ID="LinkButton2" class="btn btn-warning" runat="server">Grabar</asp:LinkButton>
+            
+            <%
+                End If
                 
                 %>
             <input type="button" value="Cancelar" class="btn btn-danger" onclick="history.back(-1)" />

@@ -126,9 +126,14 @@
     <Content Include="vistas\credito\crear.aspx" />
     <Content Include="vistas\credito\index.aspx" />
     <Content Include="vistas\credito\ver.aspx" />
+    <Content Include="vistas\Evaluaciondomiciliar\crear.aspx" />
+    <Content Include="vistas\Evaluaciondomiciliar\index.aspx" />
     <Content Include="vistas\parametrizar\index.aspx" />
     <Content Include="vistas\parametrizar\ver.aspx" />
     <Content Include="vistas\user\login.aspx" />
+    <Content Include="vistas\usuario\crear.aspx" />
+    <Content Include="vistas\usuario\inde.aspx" />
+    <Content Include="vistas\usuario\verr.aspx" />
     <Content Include="Web.config" />
     <Content Include="old\WebForm1.aspx" />
     <Content Include="old\WebForm2.aspx" />
@@ -242,6 +247,20 @@
       <DependentUpon>ver.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="vistas\Evaluaciondomiciliar\crear.aspx.designer.vb">
+      <DependentUpon>crear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Evaluaciondomiciliar\crear.aspx.vb">
+      <DependentUpon>crear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\Evaluaciondomiciliar\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Evaluaciondomiciliar\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="vistas\parametrizar\objDataTable.vb" />
     <Compile Include="vistas\parametrizar\index.aspx.designer.vb">
       <DependentUpon>index.aspx</DependentUpon>
@@ -263,6 +282,27 @@
     <Compile Include="vistas\user\login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\usuario\crear.aspx.designer.vb">
+      <DependentUpon>crear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\usuario\crear.aspx.vb">
+      <DependentUpon>crear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\usuario\inde.aspx.designer.vb">
+      <DependentUpon>inde.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\usuario\inde.aspx.vb">
+      <DependentUpon>inde.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\usuario\verr.aspx.designer.vb">
+      <DependentUpon>verr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\usuario\verr.aspx.vb">
+      <DependentUpon>verr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -33,6 +33,9 @@
     "parametrizar", _
     "~/vistas/parametrizar/index.aspx")
         routes.MapPageRoute("", _
+  "parametrizar/{accion}/{tabla}", _
+  "~/vistas/parametrizar/ver.aspx")
+        routes.MapPageRoute("", _
     "parametrizar/{accion}/{tabla}/{id}", _
     "~/vistas/parametrizar/ver.aspx")
         ' letras de pago rutas
@@ -46,6 +49,29 @@
         routes.MapPageRoute("", _
     "tipoDocumento/crear", _
     "~/vistas/tipoDocumento/Crear.aspx")
+
+              'Ruta tabla usuario crear
+        routes.MapPageRoute("", _
+    "usuario/crear", _
+    "~/vistas/usuario/crear.aspx")
+
+        'Ruta tabla usuario ver
+        routes.MapPageRoute("", _
+    "usuario/ver/{id}", _
+    "~/vistas/usuario/verr.aspx")
+        
+        'Ruta tabla usuario index
+        routes.MapPageRoute("", _
+ "usuario", _
+ "~/vistas/usuario/inde.aspx")
+        'Ruta tabla evaluacion domiciliar index
+        routes.MapPageRoute("", _
+ "evaluaciondomiciliar", _
+ "~/vistas/evaluaciondomiciliar/index.aspx")
+        'Ruta tabla evaluacion domiciliar crear
+        routes.MapPageRoute("", _
+ "evaluaciondomiciliar/crear", _
+ "~/vistas/evaluaciondomiciliar/crear.aspx")
         
     End Sub
     Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)
