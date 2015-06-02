@@ -5,7 +5,7 @@ Imports System.Data.SqlTypes
 Module Module1
 
 
-    Public cnn As New SqlConnection(ConfigurationManager.ConnectionStrings("tonyBD").ConnectionString) '("Server=TONY-PC;Database=sicove;User Id=sa; Password=1234;")
+    Public cnn As New SqlConnection(ConfigurationManager.ConnectionStrings("erickBD").ConnectionString) '("Server=TONY-PC;Database=sicove;User Id=sa; Password=1234;")
     Dim myB As String = "saved value"
 
 

@@ -22,19 +22,11 @@ F:\Documentos tony\GitHub\credito\credito\WebApplication1\obj\Debug\WebApplicati
 F:\Documentos tony\GitHub\credito\credito\WebApplication1\bin\WebApplication1.dll
 F:\Documentos tony\GitHub\credito\credito\WebApplication1\bin\WebApplication1.pdb
 F:\Documentos tony\GitHub\credito\credito\WebApplication1\bin\WebApplication1.xml
-D:\Documents\GitHub\mi version\WebApplication1\bin\WebApplication1.dll
-D:\Documents\GitHub\mi version\WebApplication1\bin\WebApplication1.pdb
-D:\Documents\GitHub\mi version\WebApplication1\bin\WebApplication1.xml
-D:\Documents\GitHub\mi version\WebApplication1\obj\Debug\WebApplication1.Resources.resources
-D:\Documents\GitHub\mi version\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
-D:\Documents\GitHub\mi version\WebApplication1\obj\Debug\WebApplication1.dll
-D:\Documents\GitHub\mi version\WebApplication1\obj\Debug\WebApplication1.xml
-D:\Documents\GitHub\mi version\WebApplication1\obj\Debug\WebApplication1.pdb
-C:\Users\jramirez\Documents\GitHub\creditos\WebApplication1\bin\WebApplication1.dll
-C:\Users\jramirez\Documents\GitHub\creditos\WebApplication1\bin\WebApplication1.pdb
-C:\Users\jramirez\Documents\GitHub\creditos\WebApplication1\bin\WebApplication1.xml
-C:\Users\jramirez\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.Resources.resources
-C:\Users\jramirez\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
-C:\Users\jramirez\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.dll
-C:\Users\jramirez\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.xml
-C:\Users\jramirez\Documents\GitHub\creditos\WebApplication1\obj\Debug\WebApplication1.pdb
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\bin\WebApplication1.dll
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\bin\WebApplication1.pdb
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\bin\WebApplication1.xml
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplication1.Resources.resources
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplication1.dll
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplication1.xml
+F:\Documentos tony\GitHub\credito\mi vercion\WebApplication1\obj\Debug\WebApplication1.pdb
