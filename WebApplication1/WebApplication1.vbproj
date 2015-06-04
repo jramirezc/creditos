@@ -128,6 +128,7 @@
     <Content Include="vistas\credito\ver.aspx" />
     <Content Include="vistas\Evaluaciondomiciliar\crear.aspx" />
     <Content Include="vistas\Evaluaciondomiciliar\index.aspx" />
+    <Content Include="vistas\Evaluaciondomiciliar\ver.aspx" />
     <Content Include="vistas\parametrizar\index.aspx" />
     <Content Include="vistas\parametrizar\ver.aspx" />
     <Content Include="vistas\user\login.aspx" />
@@ -260,6 +261,13 @@
     <Compile Include="vistas\Evaluaciondomiciliar\index.aspx.vb">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\Evaluaciondomiciliar\ver.aspx.designer.vb">
+      <DependentUpon>ver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Evaluaciondomiciliar\ver.aspx.vb">
+      <DependentUpon>ver.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="vistas\parametrizar\objDataTable.vb" />
     <Compile Include="vistas\parametrizar\index.aspx.designer.vb">

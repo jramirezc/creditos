@@ -25,6 +25,7 @@
                                 <asp:CheckBoxField DataField="serCable" HeaderText="serCable" SortExpression="serCable" />
                                 <asp:BoundField DataField="area" HeaderText="area" SortExpression="area" />
                                 <asp:CheckBoxField DataField="estado" HeaderText="estado" SortExpression="estado" />
+                                <asp:HyperLinkField DataNavigateUrlFields="idEvaDomiciliar" DataNavigateUrlFormatString="~/evaluaciondomiciliar/ver/{0}" DataTextField="idEvaDomiciliar" DataTextFormatString="&lt;i class=&quot;fa fa-eye fa-2x&quot;&gt;&lt;/i&gt;" />
                             </Columns>
                         </asp:GridView>
 
@@ -37,7 +38,7 @@
                         </div>
 
                             <div class="col-sm-1 ">
-                                <a type="button" href="\usuario/crear" class="btn btn-fab btn-raised  btn-material-green-600 "data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom"><i class="fa fa-plus-circle"></i></a>
+                                <a type="button" href="\Evaluaciondomiciliar/crear" class="btn btn-fab btn-raised  btn-material-green-600 "data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom"><i class="fa fa-plus-circle"></i></a>
                             </div>
               
 
