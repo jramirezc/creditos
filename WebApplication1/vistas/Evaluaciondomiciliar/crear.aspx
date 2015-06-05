@@ -9,7 +9,7 @@
 
     <div class="row">
             <div class="col-sm-4 col-sm-offset-4">
-                <div class="panel panel-success" >
+                < class="panel panel-success" >
                      <div class="panel-heading">
                             <h3 class="panel-title">Formulario Crear Evaluacion Domiciliar</h3>
                      </div>
@@ -19,9 +19,9 @@
                             <div class="input-group">
                 <br/>
              <span class="label label-success">ID CREDITO</span>
-
                                 <br/>
-                                <asp:DropDownList ID="idcredito" runat="server" DataSourceID="DataSourceevaluaciondomiciliar" DataTextField="idCredito" DataValueField="idCredito"></asp:DropDownList>
+                                <%Response.Write(Page.RouteData.Values("id"))%>
+
                                 <asp:SqlDataSource ID="DataSourceevaluaciondomiciliar" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procCreditoMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
         </div>
                            <div class="input-group">
@@ -81,12 +81,16 @@
 
 
                             <asp:LinkButton ID="linkBGuardar" CssClass="btn btn-success" runat="server">Guardar</asp:LinkButton>
+                </div>
+                </div>
+               
                    
+                </div>
                                         
 
                             <asp:SqlDataSource ID="DataSourceguaevadom" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procEvaluacionDomiciliarCrear" SelectCommandType="StoredProcedure">
                                 <SelectParameters>
-                                    <asp:ControlParameter ControlID="idcredito" Name="idCredito" PropertyName="SelectedValue" Type="Int32" />
+                                    <asp:RouteParameter Name="idCredito" RouteKey="id" Type="Int32" />
                                     <asp:ControlParameter ControlID="ubicacion" Name="idcampo" PropertyName="SelectedValue" Type="Int32" />
                                     <asp:ControlParameter ControlID="DropDownservicioagua" Name="agua" PropertyName="SelectedValue" Type="int32" />
                                     <asp:ControlParameter ControlID="DropDownservicioluz" Name="luz" PropertyName="SelectedValue" Type="int32" />
@@ -99,7 +103,18 @@
 
                                         
 
-                            <asp:DetailsView ID="DetailsView1" runat="server" DataSourceID="DataSourceguaevadom" Height="50px" Width="125px">
+                            <asp:DetailsView ID="DetailsView1" runat="server" DataSourceID="DataSourceguaevadom" Height="50px" Width="125px" AutoGenerateRows="False" DataKeyNames="idEvaDomiciliar">
+                                <Fields>
+                                    <asp:BoundField DataField="idEvaDomiciliar" HeaderText="idEvaDomiciliar" InsertVisible="False" ReadOnly="True" SortExpression="idEvaDomiciliar" />
+                                    <asp:BoundField DataField="idCredito" HeaderText="idCredito" SortExpression="idCredito" />
+                                    <asp:BoundField DataField="idCampo" HeaderText="idCampo" SortExpression="idCampo" />
+                                    <asp:CheckBoxField DataField="agua" HeaderText="agua" SortExpression="agua" />
+                                    <asp:CheckBoxField DataField="luz" HeaderText="luz" SortExpression="luz" />
+                                    <asp:CheckBoxField DataField="serBasura" HeaderText="serBasura" SortExpression="serBasura" />
+                                    <asp:CheckBoxField DataField="serCable" HeaderText="serCable" SortExpression="serCable" />
+                                    <asp:BoundField DataField="area" HeaderText="area" SortExpression="area" />
+                                    <asp:CheckBoxField DataField="estado" HeaderText="estado" SortExpression="estado" />
+                                </Fields>
                             </asp:DetailsView>
 
 

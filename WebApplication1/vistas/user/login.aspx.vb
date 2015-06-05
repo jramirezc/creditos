@@ -19,6 +19,7 @@
                 Session("mensaje") = "un"
             Else
                 Session("usuario") = GridView1.Rows(0).Cells(1).Text.ToString
+                Session("idusuario") = GridView1.Rows(0).Cells(0).Text.ToString
             End If
 
         End If

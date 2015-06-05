@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class ver1
+Partial Public Class vobo
 
     '''<summary>
     '''Control DetailsView1.

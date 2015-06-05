@@ -66,17 +66,25 @@
  "~/vistas/usuario/inde.aspx")
         'Ruta tabla evaluacion domiciliar index
         routes.MapPageRoute("", _
- "evaluaciondomiciliar", _
+ "credito/{id}/evaluaciondomiciliar", _
  "~/vistas/evaluaciondomiciliar/index.aspx")
         'Ruta tabla evaluacion domiciliar crear
         routes.MapPageRoute("", _
- "evaluaciondomiciliar/crear", _
+ "credito/{id}/evaluaciondomiciliar/crear", _
  "~/vistas/evaluaciondomiciliar/crear.aspx")
         'Ruta tabla Evaluacion Domiciliar ver
         routes.MapPageRoute("", _
-    "evaluaciondomiciliar/ver/{id}", _
+    "credito/{id}/evaluaciondomiciliar/ver/{idEva}", _
     "~/vistas/evaluaciondomiciliar/ver.aspx")
         
+        'Ruta tabla vobo evaluacion Domiciliar ver
+        routes.MapPageRoute("", _
+    "credito/{id}/evaluaciondomiciliar/ver/{idEva}/vobo", _
+    "~/vistas/evaluaciondomiciliar/vobo.aspx")
+        'Ruta tabla vistobueno evaluacion Domiciliar 
+        routes.MapPageRoute("", _
+    "evaluaciondomiciliar/vobo", _
+    "~/vistas/evaluaciondomiciliar/vobo.aspx")
     End Sub
     Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)
         ' Code that runs on application shutdown

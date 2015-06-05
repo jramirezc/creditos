@@ -56,13 +56,13 @@
                     <asp:BoundField DataField="idUsuario" HeaderText="idUsuario" ReadOnly="True" SortExpression="idUsuario" InsertVisible="False" />
                     <asp:BoundField DataField="nomUsuario" HeaderText="nomUsuario" SortExpression="nomUsuario" />
                     <asp:BoundField DataField="contraseñaUsuario" HeaderText="contraseñaUsuario" SortExpression="contraseñaUsuario" />
-                    <asp:BoundField DataField="idRol" HeaderText="idRol" SortExpression="idRol" />
                     <asp:BoundField DataField="cuiPersona" HeaderText="cuiPersona" SortExpression="cuiPersona" />
                     <asp:CheckBoxField DataField="estado" HeaderText="estado" SortExpression="estado" />
+                    <asp:BoundField DataField="idRol" HeaderText="idRol" SortExpression="idRol" />
                 </Columns>
             </asp:GridView>
           
-            <asp:SqlDataSource ID="validalogin" runat="server" ConnectionString="<%$ ConnectionStrings:tonyBD %>" SelectCommand="procUsuarioLogin" SelectCommandType="StoredProcedure">
+            <asp:SqlDataSource ID="validalogin" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procUsuarioLogin" SelectCommandType="StoredProcedure">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="inputEmail" Name="nomUsuario" PropertyName="Text" Type="String" />
                     <asp:ControlParameter ControlID="inputPassword" Name="contraseñaUsuario" PropertyName="Text" Type="String" />

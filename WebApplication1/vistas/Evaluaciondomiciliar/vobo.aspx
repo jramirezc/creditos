@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/layout.master" CodeBehind="ver.aspx.vb" Inherits="WebApplication1.ver1" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/layout.master" CodeBehind="vobo.aspx.vb" Inherits="WebApplication1.vobo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <title>Formulario Evaluacion Domiciliar</title>
+    <title>Formulario Evaluacion Domiciliarvobo</title>
     </asp:Content>
 
 <asp:Content ID="Content9" ContentPlaceHolderID="Crudevaluaciondomiciliar" runat="server">
-
+  
     <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
                 <div class="panel panel-warning" >
@@ -25,7 +25,6 @@
                                         <asp:CheckBoxField DataField="serCable" HeaderText="serCable" SortExpression="serCable" />
                                         <asp:BoundField DataField="area" HeaderText="area" SortExpression="area" />
                                         <asp:CheckBoxField DataField="estado" HeaderText="estado" SortExpression="estado" />
-                                        <asp:CommandField ShowEditButton="True" />
                                     </Fields>
                                 </asp:DetailsView>
                             
@@ -33,7 +32,7 @@
 
                                 <asp:SqlDataSource ID="DataSourceverevadom" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procEvaluacionDomiciliarBuscar" SelectCommandType="StoredProcedure" UpdateCommand="procEvaDomiciliarActualizar @idEvaDomiciliar, @idCredito,  @idCampo, @agua, @luz,  @serBasura, @serCable,@area, @estado">
                                     <SelectParameters>
-                                        <asp:RouteParameter Name="id" RouteKey="idEva" Type="Int32" />
+                                        <asp:RouteParameter Name="id" RouteKey="id" Type="Int32" />
                                     </SelectParameters>
                                     <UpdateParameters>
                                         <asp:Parameter Name="idEvaDomiciliar" Type="Int32" />
@@ -55,11 +54,19 @@
             </div>
        </div>
 </div>
+    <asp:LinkButton ID="VoBO" runat="server" CssClass="btn btn-success">Visto Bueno</asp:LinkButton>
+    <asp:DetailsView ID="DetailsView2" runat="server" Height="50px" Width="125px" AutoGenerateRows="False">
+    </asp:DetailsView>
 
 
 
+    <asp:SqlDataSource ID="DataSourcevistobueno" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procCreditoDomiciliarVOBO" SelectCommandType="StoredProcedure">
+        <SelectParameters>
+            <asp:RouteParameter Name="idevaluacion" RouteKey="idEva" Type="Int32" />
+            <asp:SessionParameter Name="idusuario" SessionField="idusuario" Type="Int32" />
+            <asp:RouteParameter Name="idcredito" RouteKey="id" Type="Int32" />
+        </SelectParameters>
+    </asp:SqlDataSource>
 
 
 </asp:Content>
-
- 
