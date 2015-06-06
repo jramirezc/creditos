@@ -126,6 +126,14 @@
     <Content Include="vistas\credito\crear.aspx" />
     <Content Include="vistas\credito\index.aspx" />
     <Content Include="vistas\credito\ver.aspx" />
+    <Content Include="vistas\evaluacionfinanciera\Crear.aspx" />
+    <Content Include="vistas\evaluacionfinanciera\index.aspx" />
+    <Content Include="vistas\permisosxrol\crear.aspx" />
+    <Content Include="vistas\permisosxrol\index.aspx" />
+    <Content Include="vistas\permisosxrol\Ver.aspx" />
+    <Content Include="vistas\persona\Crear.aspx" />
+    <Content Include="vistas\persona\index.aspx" />
+    <Content Include="vistas\persona\ver.aspx" />
     <Content Include="vistas\pruebas\prueba.aspx" />
     <Content Include="vistas\user\login.aspx" />
     <Content Include="vistas\usuario\crear.aspx" />
@@ -243,6 +251,62 @@
     <Compile Include="vistas\credito\ver.aspx.vb">
       <DependentUpon>ver.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\evaluacionfinanciera\Crear.aspx.designer.vb">
+      <DependentUpon>Crear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\evaluacionfinanciera\Crear.aspx.vb">
+      <DependentUpon>Crear.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\evaluacionfinanciera\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\evaluacionfinanciera\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\permisosxrol\crear.aspx.designer.vb">
+      <DependentUpon>crear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\permisosxrol\crear.aspx.vb">
+      <DependentUpon>crear.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\permisosxrol\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\permisosxrol\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\permisosxrol\Ver.aspx.designer.vb">
+      <DependentUpon>Ver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\permisosxrol\Ver.aspx.vb">
+      <DependentUpon>Ver.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\persona\Crear.aspx.designer.vb">
+      <DependentUpon>Crear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\persona\Crear.aspx.vb">
+      <DependentUpon>Crear.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\persona\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\persona\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\persona\ver.aspx.designer.vb">
+      <DependentUpon>ver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\persona\ver.aspx.vb">
+      <DependentUpon>ver.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="vistas\pruebas\objDataTable.vb" />
     <Compile Include="vistas\pruebas\prueba.aspx.designer.vb">

@@ -157,6 +157,9 @@
                 <asp:ContentPlaceHolder id="crudevaluacionfinanciera" runat="server"></asp:ContentPlaceHolder>
                <!-- Contenedor de las Vistas de Persona-->
                 <asp:ContentPlaceHolder id="crudpersona" runat="server"></asp:ContentPlaceHolder>
+                <!-- Contenedor de las Vistas de Permisos por Rol-->
+                <asp:ContentPlaceHolder id="crudpermisosxrol" runat="server"></asp:ContentPlaceHolder>
+
            </div>
         </div>
 </div>

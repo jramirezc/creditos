@@ -56,6 +56,51 @@
  "usuario", _
  "~/vistas/usuario/inde.aspx")
         
+        'Ruta tabla persona index
+        routes.MapPageRoute("", _
+ "persona", _
+ "~/vistas/persona/index.aspx")
+        
+            
+        'Ruta tabla persona crear
+        routes.MapPageRoute("", _
+ "persona/crear", _
+ "~/vistas/persona/crear.aspx")
+        
+        
+        'Ruta tabla persona ver
+        routes.MapPageRoute("", _
+ "persona/ver/{id}", _
+ "~/vistas/persona/ver.aspx")
+        
+        'Ruta tabla Evaluación Financiera index
+        routes.MapPageRoute("", _
+ "evaluacionfinanciera", _
+ "~/vistas/evaluacionfinanciera/index.aspx")
+        
+        'Ruta tabla Evaluación Financiera crear
+        routes.MapPageRoute("", _
+ "evaluacionfinanciera/crear", _
+ "~/vistas/evaluacionfinanciera/crear.aspx")
+        
+        'Ruta tabla Evaluación Permisos por Rol
+        routes.MapPageRoute("", _
+ "permisosxrol", _
+ "~/vistas/permisosxrol/index.aspx")
+
+        
+        'Ruta tabla persona permiso por rol
+        routes.MapPageRoute("", _
+ "permisosxrol/crear", _
+ "~/vistas/permisosxrol/crear.aspx")
+        
+        'Ruta tabla permisos por rol ver
+        routes.MapPageRoute("", _
+ "permisosxrol/ver/{id}", _
+ "~/vistas/permisosxrol/ver.aspx")
+        
+        
+        
         
     End Sub
     Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)
