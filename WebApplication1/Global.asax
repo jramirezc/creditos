@@ -85,7 +85,48 @@
         routes.MapPageRoute("", _
     "evaluaciondomiciliar/vobo", _
     "~/vistas/evaluaciondomiciliar/vobo.aspx")
+
+
+        'Rutas de Carlos
+        'Ruta tabla persona index
+        routes.MapPageRoute("", _
+ "persona", _
+ "~/vistas/persona/index.aspx")
+        
+            
+        'Ruta tabla persona crear
+        routes.MapPageRoute("", _
+ "persona/crear", _
+ "~/vistas/persona/crear.aspx")
+        
+        
+        'Ruta tabla persona ver
+        routes.MapPageRoute("", _
+ "persona/ver/{id}", _
+ "~/vistas/persona/ver.aspx")
+
+
+ 'Ruta tabla  Permisos por Rol
+        routes.MapPageRoute("", _
+ "permisosxrol", _
+ "~/vistas/permisosxrol/index.aspx")
+
+        
+        'Ruta tabla persona permiso por rol
+        routes.MapPageRoute("", _
+ "permisosxrol/crear", _
+ "~/vistas/permisosxrol/crear.aspx")
+        
+        'Ruta tabla permisos por rol ver
+        routes.MapPageRoute("", _
+ "permisosxrol/ver/{id}", _
+ "~/vistas/permisosxrol/ver.aspx")
+
     End Sub
+    
+    
+    
+    
     Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)
         ' Code that runs on application shutdown
     End Sub

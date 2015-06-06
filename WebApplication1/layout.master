@@ -117,6 +117,9 @@
         <ul class="dropdown-menu">
           <li><a href="\parametrizar/">parametrizar</a></li>
           <li><a href="\usuario/">Usuario</a></li>
+          <li><a href="\persona/">Persona</a></li>
+          <li><a href="\permisosxrol/">Permisos por Rol</a></li>
+       
           
           
           
@@ -150,7 +153,12 @@
                 <asp:ContentPlaceHolder id="crudusuario" runat="server"></asp:ContentPlaceHolder>
                <!-- Contenedor de las Vistas de vistas evaluacion domiciliar-->
                 <asp:ContentPlaceHolder id="Crudevaluaciondomiciliar" runat="server"></asp:ContentPlaceHolder>
-           </div>
+         
+               <!-- Contenedor de las Vistas de Persona-->
+                <asp:ContentPlaceHolder id="crudpersona" runat="server"></asp:ContentPlaceHolder>
+                <!-- Contenedor de las Vistas de Permisos por Rol-->
+                <asp:ContentPlaceHolder id="crudpermisosxrol" runat="server"></asp:ContentPlaceHolder>
+                 </div>
         </div>
 </div>
     </form>
