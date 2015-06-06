@@ -6,7 +6,7 @@ Imports System.IO
 Module preuba
     Public MostrarTodo As New DataTable
     Public Buscar As New DataTable
-
+    'unciones para PARAMENTRIZAR
     Public Sub procMostrarTodo(ByVal tabla As String) '(ByVal Id As SqlString, ByVal Nom As SqlString)
         MostrarTodo = New DataTable
         Dim comandoIG As New SqlCommand()

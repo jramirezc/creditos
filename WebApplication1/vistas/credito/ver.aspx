@@ -30,7 +30,7 @@
                                         <asp:Parameter Name="idCredito" />
                                     </UpdateParameters>
                                 </asp:SqlDataSource>
-                                <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                                
                                 <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" CssClass="table" DataKeyNames="idCredito" DataSourceID="verCreditosql" Height="50px" Width="125px">
                                     <Fields>
                                         <asp:BoundField DataField="idCredito" HeaderText="idCredito" InsertVisible="False" ReadOnly="True" SortExpression="idCredito" />
@@ -95,6 +95,13 @@
                                 
                                 
                             </div>
+                          <div class="col-sm-1 ">
+            
+            
+            
+            <a type="button" href='\credito/<% Response.Write(Page.RouteData.Values("id"))%>/evaluaciondomiciliar' class="btn btn-fab btn-raised  btn-material-blue-600 ">ED<i class="fa fa-plus-crcle"></i></a>
+            
+        </div>
                   </div>
             </div>
        </div>

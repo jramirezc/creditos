@@ -8,7 +8,7 @@
 
         <div class="panel panel-material-blue-grey" >
             <div class="panel-heading">
-                <h3 class="panel-title">Usuarios</h3>
+                <h3 class="panel-title">Evaluaciones Domicilares del Credito # <% Response.Write(Page.RouteData.Values("id")) %></h3>
             </div>
                 
     
@@ -18,12 +18,29 @@
                                 <Columns>
                                     <asp:BoundField DataField="idEvaDomiciliar" HeaderText="idEvaDomiciliar" InsertVisible="False" ReadOnly="True" SortExpression="idEvaDomiciliar" />
                                     <asp:BoundField DataField="idCredito" HeaderText="idCredito" SortExpression="idCredito" />
-                                    <asp:BoundField DataField="idCampo" HeaderText="idCampo" SortExpression="idCampo" />
+                                    <asp:TemplateField HeaderText="Campo" SortExpression="idCampo">
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("idCampo") %>'></asp:TextBox>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:Label ID="Label1" runat="server" Text='<%# Bind("idCampo") %>' Visible="False"></asp:Label>
+                                            <asp:DataList ID="DataList1" runat="server" DataKeyField="idCampo" DataSourceID="campoVerNombre">
+                                                <ItemTemplate>
+                                                    <asp:Label ID="nomCampoLabel" runat="server" Text='<%# Eval("nomCampo") %>' />
+                                                </ItemTemplate>
+                                            </asp:DataList>
+                                            <asp:SqlDataSource ID="campoVerNombre" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procCampoBuscar" SelectCommandType="StoredProcedure">
+                                                <SelectParameters>
+                                                    <asp:ControlParameter ControlID="Label1" Name="id" PropertyName="Text" Type="Int32" />
+                                                </SelectParameters>
+                                            </asp:SqlDataSource>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
                                     <asp:CheckBoxField DataField="agua" HeaderText="agua" SortExpression="agua" />
                                     <asp:CheckBoxField DataField="luz" HeaderText="luz" SortExpression="luz" />
-                                    <asp:CheckBoxField DataField="serBasura" HeaderText="serBasura" SortExpression="serBasura" />
-                                    <asp:CheckBoxField DataField="serCable" HeaderText="serCable" SortExpression="serCable" />
-                                    <asp:BoundField DataField="area" HeaderText="area" SortExpression="area" />
+                                    <asp:CheckBoxField DataField="serBasura" HeaderText="Servicio de Basura" SortExpression="serBasura" />
+                                    <asp:CheckBoxField DataField="serCable" HeaderText="Servicio de Cable" SortExpression="serCable" />
+                                    <asp:BoundField DataField="area" HeaderText="Area (m2)" SortExpression="area" />
                                     <asp:CheckBoxField DataField="estado" HeaderText="estado" SortExpression="estado" />
                                     <asp:TemplateField>
                                         <ItemTemplate>
@@ -36,7 +53,11 @@
                             </asp:GridView>
 
                            
-                            <asp:SqlDataSource ID="DataSourcemostrasevaluacionfinanciera" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procEvaluacionDomiciliarMostrarTodo" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="DataSourcemostrasevaluacionfinanciera" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procEvaluacionDomiciliarMostrarTodo" SelectCommandType="StoredProcedure">
+                                <SelectParameters>
+                                    <asp:RouteParameter Name="id" RouteKey="id" Type="Int32" DefaultValue="0" />
+                                </SelectParameters>
+                            </asp:SqlDataSource>
 
 
 
@@ -44,7 +65,7 @@
 
                                 <div class="col-sm-1 ">
                                     <a type="button" href="Evaluaciondomiciliar/crear" class="btn btn-fab btn-raised  btn-material-green-600 "data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom"><i class="fa fa-plus-circle"></i></a>
-                                    <a type="button" href="Evaluaciondomiciliar/crear" class="btn btn-fab btn-raised  btn-material-green-600 "data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom"><i class="fa fa-plus-circle"></i></a>
+                                    
 
                                 </div>
               

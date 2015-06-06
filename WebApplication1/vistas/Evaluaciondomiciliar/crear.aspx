@@ -9,7 +9,7 @@
 
     <div class="row">
             <div class="col-sm-4 col-sm-offset-4">
-                < class="panel panel-success" >
+                <div class="panel panel-success" >
                      <div class="panel-heading">
                             <h3 class="panel-title">Formulario Crear Evaluacion Domiciliar</h3>
                      </div>
@@ -81,6 +81,7 @@
 
 
                             <asp:LinkButton ID="linkBGuardar" CssClass="btn btn-success" runat="server">Guardar</asp:LinkButton>
+                </div>
                 </div>
                 </div>
                

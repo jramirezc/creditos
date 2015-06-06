@@ -37,6 +37,8 @@
     <asp:LinkButton ID="LinkButton6" runat="server" CssClass="btn btn-primary">TipCredito</asp:LinkButton>
     <asp:LinkButton ID="LinkButton7" runat="server" CssClass="btn btn-primary">TipDocumento</asp:LinkButton>
     <asp:LinkButton ID="LinkButton8" runat="server" CssClass="btn btn-primary">Permiso</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton9" runat="server" CssClass="btn btn-primary">Campo</asp:LinkButton>
+
 
 
     

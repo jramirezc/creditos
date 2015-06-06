@@ -15,11 +15,62 @@
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table " DataKeyNames="idCredito" DataSourceID="vercreditos">
                 <Columns>
                     <asp:BoundField DataField="idCredito" HeaderText="idCredito" InsertVisible="False" ReadOnly="True" SortExpression="idCredito" />
-                    <asp:BoundField DataField="idTipCredito" HeaderText="idTipCredito" SortExpression="idTipCredito" />
+                    <asp:TemplateField HeaderText="Tipo de Credito" SortExpression="idTipCredito">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("idTipCredito") %>'></asp:TextBox>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="Label1" runat="server" Text='<%# Bind("idTipCredito") %>' Visible="False"></asp:Label>
+                            <asp:DataList ID="DataList1" runat="server" DataKeyField="idTipCredito" DataSourceID="muestraTipCredito">
+                                <ItemTemplate>
+                                    &nbsp;<asp:Label ID="nomTipCreditoLabel" runat="server" Text='<%# Eval("nomTipCredito") %>' />
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="muestraTipCredito" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procTipCreditoBuscar" SelectCommandType="StoredProcedure">
+                                <SelectParameters>
+                                    <asp:ControlParameter ControlID="Label1" DefaultValue="" Name="id" PropertyName="Text" Type="Int32" />
+                                </SelectParameters>
+                            </asp:SqlDataSource>
+                        </ItemTemplate>
+                    </asp:TemplateField>
                     <asp:BoundField DataField="monto" HeaderText="monto" SortExpression="monto" />
-                    <asp:BoundField DataField="idTasa" HeaderText="idTasa" SortExpression="idTasa" />
-                    <asp:BoundField DataField="idEstado" HeaderText="idEstado" SortExpression="idEstado" />
-                    <asp:BoundField DataField="mes" HeaderText="mes" SortExpression="mes" />
+                    <asp:TemplateField HeaderText="Tasa" SortExpression="idTasa">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("idTasa") %>'></asp:TextBox>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="Label2" runat="server" Text='<%# Bind("idTasa") %>' Visible="False"></asp:Label>
+                            <asp:DataList ID="DataList2" runat="server" DataKeyField="idTasa" DataSourceID="tasaVerNombre">
+                                <ItemTemplate>
+                                    <asp:Label ID="nomTasaLabel" runat="server" Text='<%# Eval("nomTasa") %>' />
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="tasaVerNombre" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procTasaBuscar" SelectCommandType="StoredProcedure">
+                                <SelectParameters>
+                                    <asp:ControlParameter ControlID="Label2" Name="id" PropertyName="Text" Type="Int32" />
+                                </SelectParameters>
+                            </asp:SqlDataSource>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Estado" SortExpression="idEstado">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("idEstado") %>'></asp:TextBox>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="Label3" runat="server" Text='<%# Bind("idEstado") %>' Visible="False"></asp:Label>
+                            <asp:DataList ID="DataList3" runat="server" DataKeyField="idEstado" DataSourceID="estadoVerNombre">
+                                <ItemTemplate>
+                                    &nbsp;<asp:Label ID="nomEstadoLabel" runat="server" Text='<%# Eval("nomEstado") %>' />
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="estadoVerNombre" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procEstadoBuscar" SelectCommandType="StoredProcedure">
+                                <SelectParameters>
+                                    <asp:ControlParameter ControlID="Label3" Name="id" PropertyName="Text" Type="Int32" />
+                                </SelectParameters>
+                            </asp:SqlDataSource>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:BoundField DataField="mes" HeaderText="meses" SortExpression="mes" />
                     <asp:BoundField DataField="creado" HeaderText="creado" SortExpression="creado" />
                      <asp:HyperLinkField DataNavigateUrlFields="idCredito" DataNavigateUrlFormatString="~/credito/ver/{0}" DataTextField="idTipCredito" DataTextFormatString="&lt;i class=&quot;fa fa-eye fa-2x&quot;&gt;&lt;/i&gt;" >
                     <ControlStyle CssClass="btn btn-material-blue" />

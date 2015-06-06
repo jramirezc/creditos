@@ -31,20 +31,20 @@
                             
 
 
-                                <asp:SqlDataSource ID="DataSourceverevadom" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procEvaluacionDomiciliarBuscar" SelectCommandType="StoredProcedure" UpdateCommand="procEvaDomiciliarActualizar @idEvaDomiciliar, @idCredito,  @idCampo, @agua, @luz,  @serBasura, @serCable,@area, @estado">
+                                <asp:SqlDataSource ID="DataSourceverevadom" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procEvaluacionDomiciliarBuscar" SelectCommandType="StoredProcedure" UpdateCommand="UPDATE [Tbl_EvaluacionDomiciliar] SET [idCredito] = @idCredito, [idCampo] = @idCampo, [agua] = @agua, [luz] = @luz, [serBasura] = @serBasura, [serCable] = @serCable, [area] = @area, [estado] = @estado WHERE [idEvaDomiciliar] = @original_idEvaDomiciliar" OldValuesParameterFormatString="original_{0}">
                                     <SelectParameters>
-                                        <asp:RouteParameter Name="id" RouteKey="idEva" Type="Int32" />
+                                        <asp:RouteParameter Name="id" RouteKey="id" Type="Int32" />
                                     </SelectParameters>
                                     <UpdateParameters>
-                                        <asp:Parameter Name="idEvaDomiciliar" Type="Int32" />
                                         <asp:Parameter Name="idCredito" Type="Int32" />
                                         <asp:Parameter Name="idCampo" Type="Int32" />
                                         <asp:Parameter Name="agua" Type="Boolean" />
                                         <asp:Parameter Name="luz" Type="Boolean" />
                                         <asp:Parameter Name="serBasura" Type="Boolean" />
                                         <asp:Parameter Name="serCable" Type="Boolean" />
-                                        <asp:Parameter Name="area" Type="Int32" />
+                                        <asp:Parameter Name="area" Type="Decimal" />
                                         <asp:Parameter Name="estado" Type="Boolean" />
+                                        <asp:Parameter Name="original_idEvaDomiciliar" Type="Int32" />
                                     </UpdateParameters>
                                 </asp:SqlDataSource>
                             

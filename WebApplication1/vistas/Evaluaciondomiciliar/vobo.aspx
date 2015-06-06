@@ -32,7 +32,7 @@
 
                                 <asp:SqlDataSource ID="DataSourceverevadom" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procEvaluacionDomiciliarBuscar" SelectCommandType="StoredProcedure" UpdateCommand="procEvaDomiciliarActualizar @idEvaDomiciliar, @idCredito,  @idCampo, @agua, @luz,  @serBasura, @serCable,@area, @estado">
                                     <SelectParameters>
-                                        <asp:RouteParameter Name="id" RouteKey="id" Type="Int32" />
+                                        <asp:RouteParameter Name="id" RouteKey="idEva" Type="Int32" />
                                     </SelectParameters>
                                     <UpdateParameters>
                                         <asp:Parameter Name="idEvaDomiciliar" Type="Int32" />

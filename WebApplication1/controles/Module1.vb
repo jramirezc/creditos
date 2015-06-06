@@ -11,7 +11,7 @@ Module Module1
 
 
 
-
+    'fucion que se conecta ala BAse de Datos
     Public Sub conectarce()
         Try
             If cnn.State = 1 Then
@@ -29,6 +29,7 @@ Module Module1
 
         End Try
     End Sub
+    'Funciones Antiguas que Utlice en otro Proytecto de un colegio Las Nuevas estan en otro modulo
     Public Sub insertgrado(ByVal Id As SqlString, ByVal Nom As SqlString)
 
         Dim comandoIG As New SqlCommand()

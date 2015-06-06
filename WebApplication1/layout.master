@@ -78,18 +78,12 @@
   <div class="navbar-collapse collapse navbar-responsive-collapse">
             <!-- Botones de Barra Izquierda-->
     <ul class="nav navbar-nav">
-      <li class="active"><a href="javascript:void(0)">Inicio</a></li>
+      <li class="active"><a href="/">Inicio</a></li>
       <li class="dropdown">
         <a href="http://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="\credito/">Creditos</a></li>
-          <li><a href="\parametrizar/">parametrizar</a></li>
-          <li><a href="\usuario/">Usuario</a></li>
-          <li><a href="javascript:void(0)">Something else here</a></li>
-          <li class="divider"></li>
-          <li class="dropdown-header">Dropdown header</li>
-          <li><a href="javascript:void(0)">Separated link</a></li>
-          <li><a href="javascript:void(0)">One more separated link</a></li>
+ 
         </ul>
       </li>
     </ul>
@@ -97,7 +91,7 @@
     <!-- Botones de Barra Derecha-->
     <ul class="nav navbar-nav navbar-right">
     <!-- Botones de Barra para Inicio de Sesion-->
-          <li><a href="/login">Link</a></li>
+        
       <li>
           <%  If (Not IsNothing(Session("usuario"))) Then
                   %>
@@ -121,10 +115,11 @@
         <a href="http://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">
             Herramientas <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="javascript:void(0)">Another action</a></li>
-          <li><a href="javascript:void(0)">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="javascript:void(0)">Separated link</a></li>
+          <li><a href="\parametrizar/">parametrizar</a></li>
+          <li><a href="\usuario/">Usuario</a></li>
+          
+          
+          
         </ul>
       </li>
     </ul>
@@ -136,8 +131,7 @@
 </div>
         <br />
         <br />
-        <br />
-        <br />
+   
 <div id="Conetendores">
         <!-- Contenido de las Vistas de usuario-->
          <asp:ContentPlaceHolder id="usuario" runat="server"></asp:ContentPlaceHolder>

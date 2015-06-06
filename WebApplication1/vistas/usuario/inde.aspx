@@ -22,7 +22,25 @@
                                 <asp:BoundField DataField="contraseñaUsuario" HeaderText="contraseñaUsuario" SortExpression="contraseñaUsuario" />
                                 <asp:BoundField DataField="cuiPersona" HeaderText="cuiPersona" SortExpression="cuiPersona" />
                                 <asp:CheckBoxField DataField="estado" HeaderText="estado" SortExpression="estado" />
-                                <asp:BoundField DataField="idRol" HeaderText="idRol" SortExpression="idRol" />
+                                <asp:TemplateField HeaderText="Rol" SortExpression="idRol">
+                                    <EditItemTemplate>
+                                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("idRol") %>'></asp:TextBox>
+                                    </EditItemTemplate>
+                                    <ItemTemplate>
+                                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("idRol") %>' Visible="False"></asp:Label>
+                                        <asp:DataList ID="DataList1" runat="server" DataKeyField="idRol" DataSourceID="rolVerNombre">
+                                            <ItemTemplate>
+                                                <asp:Label ID="nomRolLabel" runat="server" Text='<%# Eval("nomRol") %>' />
+                                                <br />
+                                            </ItemTemplate>
+                                        </asp:DataList>
+                                        <asp:SqlDataSource ID="rolVerNombre" runat="server" ConnectionString="<%$ ConnectionStrings:erickBD %>" SelectCommand="procRolBuscar" SelectCommandType="StoredProcedure">
+                                            <SelectParameters>
+                                                <asp:ControlParameter ControlID="Label1" Name="id" PropertyName="Text" Type="Int32" />
+                                            </SelectParameters>
+                                        </asp:SqlDataSource>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
                                 <asp:HyperLinkField DataNavigateUrlFields="idUsuario" DataNavigateUrlFormatString="~/usuario/ver/{0}" DataTextField="idUsuario" DataTextFormatString="&lt;i class=&quot;fa fa-eye fa-2x&quot;&gt;&lt;/i&gt;" />
                             </Columns>
                         </asp:GridView>

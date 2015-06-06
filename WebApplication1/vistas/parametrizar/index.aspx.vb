@@ -66,4 +66,9 @@ Public Class prueba
         Label1.Text = LinkButton8.Text.ToString
 
     End Sub
+
+    Protected Sub LinkButton9_Click(sender As Object, e As EventArgs) Handles LinkButton9.Click
+        Label1.Text = LinkButton9.Text.ToString
+
+    End Sub
 End Class

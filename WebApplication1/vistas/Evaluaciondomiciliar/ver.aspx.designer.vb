@@ -30,31 +30,4 @@ Partial Public Class ver1
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DataSourceverevadom As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''Control VoBO.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents VoBO As Global.System.Web.UI.WebControls.LinkButton
-
-    '''<summary>
-    '''Control DetailsView2.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents DetailsView2 As Global.System.Web.UI.WebControls.DetailsView
-
-    '''<summary>
-    '''Control DataSourcevistobueno.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents DataSourcevistobueno As Global.System.Web.UI.WebControls.SqlDataSource
 End Class
